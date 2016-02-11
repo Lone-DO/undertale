@@ -1,0 +1,40 @@
+/*I have no idea what this is for*/
+
+.pad1 {
+	min-width: 120px; width: 120px; min-height: 128px; height: 68px; display: inline-block;
+}
+.pad2 {
+	min-width: 127px; width: 127px; min-height: 128px; height: 68px; display: inline-block;
+}
+.flowey {
+	min-width: 88px; width: 88px; background-image: url(images/floweyBIG.png);  background-repeat: no-repeat; min-height: 121px; height: 61px; display: inline-block;
+}
+body:after{
+    display:none;
+    content: url(images/floweyBIG.png) url(images/floweymoneyeyesBIG.png) url(images/floweyhappyBIG.png) url(images/floweymoneyeyesBIG.png) url(images/floweymoneyeyesBIG2.png) url(images/floweycuteBIG.png) url(images/floweycoolBIG.png) url(images/floweywinkBIG.png);
+}
+/*Adding CSS*/
+
+* {
+	font-family: verdana;
+	margin: auto ;
+}
+
+body {
+	
+	background: black;
+	text-align: center ;
+	color: white;
+}
+
+img {
+	align-content: center;
+}
+
+ul  {
+	list-style: none;
+}
+
+.liNum {
+	 list-style: decimal
+}

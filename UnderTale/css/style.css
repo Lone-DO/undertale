@@ -47,17 +47,17 @@ iframe {
 /***************************
 	 		Classes
 ****************************/
-.page {
-	 margi: 2%;
+.page {}
+
+.hide {
+	 display: none;
 }
 
 .left {
 	 text-align: left;
 }
 
-.container {
-	 margin: 80%;
-}
+
 
 .frameT {
 	 width: 462px;

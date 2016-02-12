@@ -15,6 +15,10 @@ body:after{
 }
 /*Adding CSS*/
 
+/***************************
+Base Styles
+****************************/
+
 * {
 	font-family: verdana;
 	margin: auto ;
@@ -35,11 +39,48 @@ ul  {
 	list-style: none;
 }
 
+iframe {
+	 border-style: none;
+	 border: 0;
+}
 
+/***************************
+Classes
+****************************/
 .left {
-	 text-align: left
+	 text-align: left;
 }
 
 .container {
-	 margin: 80
+	 margin: 80%;
 }
+
+.frameT {
+	 width: 462px;
+	 height: 442px;
+}
+
+.frameM {
+	 width: 456;
+	 height: 328;
+}
+
+#logo {
+	 display: block;
+}
+
+
+/***************************
+Flexbox
+****************************/
+.flexbox {
+	 display: flex;
+	 flex-direction: row;
+}
+
+.flexbox li{
+	 
+}
+/***************************
+Media Queries
+****************************/

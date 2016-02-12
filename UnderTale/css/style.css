@@ -16,7 +16,7 @@ body:after{
 /*Adding CSS*/
 
 /***************************
-Base Styles
+	 		Base Styles
 ****************************/
 
 * {
@@ -45,8 +45,12 @@ iframe {
 }
 
 /***************************
-Classes
+	 		Classes
 ****************************/
+.page {
+	 margi: 2%;
+}
+
 .left {
 	 text-align: left;
 }
@@ -57,12 +61,12 @@ Classes
 
 .frameT {
 	 width: 462px;
-	 height: 442px;
+	 height: 21rem;
 }
 
 .frameM {
 	 width: 456;
-	 height: 328;
+	 height: 21rem;
 }
 
 #logo {
@@ -71,16 +75,28 @@ Classes
 
 
 /***************************
-Flexbox
+	 			Flexbox
 ****************************/
-.flexbox {
+.flexbox, 
+.purchase,
+.media,
+.merch {
 	 display: flex;
+}
+/*Columns*/
+.flexbox,
+.media {
 	 flex-direction: row;
 }
-
-.flexbox li{
-	 
+/*Rows*/
+.purchase,
+.merch {
+	 flex-flow: column;
 }
+/*Individual Customs*/
+
+
+
 /***************************
-Media Queries
+	 		Media Queries
 ****************************/

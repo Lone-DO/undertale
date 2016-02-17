@@ -95,14 +95,34 @@ iframe {
 }
 /*Individual Customs*/
 
+/**********************************
+Magnific jQuery Plugin
+***********************************/
 
+/* padding-bottom and top for image */
+.mfp-no-margins img.mfp-img {
+	padding: 0;
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
+	top: 0;
+	bottom: 0;
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
+	padding: 0;
+}
+
+a.magnific:focus {
+  outline: none;
+}
 
 /***************************
 	 		Media Queries
 ****************************/
 #tune {
 	position: fixed;
-	top: 0;
+	bottom: 0;
 	left: 0;
-	display: none;
+	display: ;
 }

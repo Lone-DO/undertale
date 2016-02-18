@@ -1,3 +1,14 @@
+@font-face {
+	font-family:DTM-Sans;
+	src:url(../font/dtm-sans);
+	
+   src:url('../font/DeterminationMonoWeb.woff') format('woff'),
+       url('../font/DeterminationSansWeb.woff') format('woff'), 
+       url('../font/DTM-Mono.opentype')  			format('OpenType'),
+       url('../font/MonsterFriendBack.opentype')  format('OpenType'),
+       url('../font/MonsterFriendDeluxe.svg') format('svg');
+}
+
 /*I have no idea what this is for*/
 
 .pad1 {
@@ -19,21 +30,11 @@ body:after{
 	 		Base Styles
 ****************************/
 
-@font-face {
-	font-family:DTM-Sans;
-	src:url('../font/DTM-Sans.opentype');
-/*
-   src:url('../font/DeterminationMonoWeb.woff') format('woff'),
-       url('../font/DeterminationSansWeb.woff') format('woff'), 
-       url('../font/DTM-Mono.opentype')  			format('OpenType'),
-       url('../font/MonsterFriendBack.opentype')  format('OpenType'),
-       url('../font/MonsterFriendDeluxe.svg') format('svg');
-*/
-}
+
 
 
 * {
-	font-family: DTM-Sans;
+	font-family: verdana;
 	text-align: center;
 	margin: auto ;
 	box-sizing: border-box;
@@ -46,10 +47,6 @@ body {
 	color: white;
 }
 
-img {
-	align-content: center;
-}
-
 ul  {
 	list-style: none;
 }
@@ -60,21 +57,12 @@ iframe {
 }
 
 /***************************
-	 		Classes
+	 		Header
 ****************************/
-.page {
-	margin: 2%;
-}
 
-.hide {
-	 display: none;
-}
-
-.left {
-	 text-align: left;
-}
-
-
+/***************************
+	 		 Index
+****************************/
 
 .frameT {
 	 width: 462px;
@@ -86,10 +74,52 @@ iframe {
 	 height: 21rem;
 }
 
+/***************************
+	 		 About
+****************************/
+
+.a-container li img {
+	align-content: center;
+	width: 100%;
+	padding-left: 0px;
+}
+
+/***************************
+	 		Contact
+****************************/
+
+
+/***************************
+	 	Troubleshoot
+****************************/
+
+.left {
+	 text-align: left;
+}
+
+/***************************
+	 		Classes
+****************************/
+
+
+.page {
+	margin: 0 10%; 
+}
+
+.hide {
+	 display: none;
+}
+
 #logo {
 	 display: block;
 }
 
+#tune {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	display: none ;
+}
 
 /***************************
 	 			Flexbox
@@ -97,7 +127,8 @@ iframe {
 .flexbox, 
 .purchase,
 .media,
-.merch {
+.merch,
+.a-container {
 	 display: flex;
 }
 /*Columns*/
@@ -107,10 +138,28 @@ iframe {
 }
 /*Rows*/
 .purchase,
-.merch {
+.merch,
+.a-container {
 	 flex-flow: column;
+	justify-content: center;
 }
+
+.frameT {
+	flex-grow: 2;
+}
+
+/*Middle Purchase Frame*/
+.frameM {
+	flex-grow: 1;
+}
+
 /*Individual Customs*/
+
+
+
+/***************************
+	 		Footer
+****************************/
 
 /**********************************
 Magnific jQuery Plugin
@@ -137,9 +186,10 @@ a.magnific:focus {
 /***************************
 	 		Media Queries
 ****************************/
-#tune {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	display: none ;
+
+@media(min-width:1024px) {
+	#xscr4 {
+		justify-content: space-between;
+	}
 }
+	

@@ -7,11 +7,11 @@
 	min-width: 127px; width: 127px; min-height: 128px; height: 68px; display: inline-block;
 }
 .flowey {
-	min-width: 88px; width: 88px; background-image: url(images/floweyBIG.png);  background-repeat: no-repeat; min-height: 121px; height: 61px; display: inline-block;
+	min-width: 88px; width: 88px; background-image: url(../images/floweyBIG.png);  background-repeat: no-repeat; min-height: 121px; height: 61px; display: inline-block;
 }
 body:after{
     display:none;
-    content: url(images/floweyBIG.png) url(images/floweymoneyeyesBIG.png) url(images/floweyhappyBIG.png) url(images/floweymoneyeyesBIG.png) url(images/floweymoneyeyesBIG2.png) url(images/floweycuteBIG.png) url(images/floweycoolBIG.png) url(images/floweywinkBIG.png);
+    content: url(../images/floweyBIG.png) url(../images/floweymoneyeyesBIG.png) url(../images/floweyhappyBIG.png) url(images/../floweymoneyeyesBIG.png) url(../images/floweymoneyeyesBIG2.png) url(../images/floweycuteBIG.png) url(../images/floweycoolBIG.png) url(../images/floweywinkBIG.png);
 }
 /*Adding CSS*/
 
@@ -21,7 +21,9 @@ body:after{
 
 * {
 	font-family: verdana;
+	text-align: center;
 	margin: auto ;
+	box-sizing: border-box;
 }
 
 body {
@@ -47,7 +49,9 @@ iframe {
 /***************************
 	 		Classes
 ****************************/
-.page {}
+.page {
+	margin: 2%;
+}
 
 .hide {
 	 display: none;
@@ -124,5 +128,5 @@ a.magnific:focus {
 	position: fixed;
 	bottom: 0;
 	left: 0;
-	display: ;
+	display: none ;
 }

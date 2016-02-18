@@ -19,8 +19,21 @@ body:after{
 	 		Base Styles
 ****************************/
 
+@font-face {
+	font-family:DTM-Sans;
+	src:url('../font/DTM-Sans.opentype');
+/*
+   src:url('../font/DeterminationMonoWeb.woff') format('woff'),
+       url('../font/DeterminationSansWeb.woff') format('woff'), 
+       url('../font/DTM-Mono.opentype')  			format('OpenType'),
+       url('../font/MonsterFriendBack.opentype')  format('OpenType'),
+       url('../font/MonsterFriendDeluxe.svg') format('svg');
+*/
+}
+
+
 * {
-	font-family: verdana;
+	font-family: DTM-Sans;
 	text-align: center;
 	margin: auto ;
 	box-sizing: border-box;

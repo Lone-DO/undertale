@@ -85,13 +85,13 @@ iframe {
 	 		 About
 ****************************/
 
-.about {
+.a-container {
 	font-size: 1.9rem;
 	word-spacing: -2px;
 	margin-bottom: -100px
 }
 
-.a-container li img {
+about li img {
 	align-content: center;
 	width: 740px;
 	padding-left: 0px;

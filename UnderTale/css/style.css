@@ -1,18 +1,24 @@
-@font-face {font-family:'DTM-Sans';src:url("../font/dtm-sans.otf"); format('otf');
+@font-face {
+	font-family:'DTM-Sans';
+		src:url("../font/dtm-sans.otf");
 	
-   src:url('../font/DeterminationMonoWeb.woff') format('woff'),
-       url('../font/DeterminationSansWeb.woff') format('woff'), 
-       url('../font/DTM-Mono.opentype')  			format('OpenType'),
-       url('../font/MonsterFriendBack.opentype')  format('OpenType'),
-       url('../font/MonsterFriendDeluxe.svg') format('svg');
-}
-
 /*
-
-@font-face{font-family:'Nexa';src:url("../fonts/nexa/nexa_light-webfont.woff") format("woff"),url("../fonts/nexa/nexa_light-webfont.ttf") format("truetype")}@font-face{font-family:'Nexa';src:url("../fonts/nexa/nexa_bold-webfont.woff") format("woff"),url("../fonts/nexa/nexa_bold-webfont.ttf") format("truetype");font-weight:bold}
-
+   font-family:'DeterminationMonoWeb';
+		src:url("../font/DeterminationMonoWeb.woff");
+		
+	font-family:'DeterminationSansWeb';
+		src:url("../font/DeterminationSansWeb.woff");
+			
+	font-family:'DTM-Mono';
+		src:url("../font/DTM-Mono.opentype");
+	
+	font-family:'MonsterFriendBack';
+		src:url("../font/MonsterFriendBack.opentype"); 
+			
+	font-family:'MonsterFriendDeluxe';
+		src:url("../font/MonsterFriendDeluxe.svg");
 */
-
+}
 
 /*I have no idea what this is for*/
 
@@ -27,7 +33,7 @@
 }
 body:after{
     display:none;
-    content: url(../images/floweyBIG.png) url(../images/floweymoneyeyesBIG.png) url(../images/floweyhappyBIG.png) url(images/../floweymoneyeyesBIG.png) url(../images/floweymoneyeyesBIG2.png) url(../images/floweycuteBIG.png) url(../images/floweycoolBIG.png) url(../images/floweywinkBIG.png);
+    content: url(../images/floweyBIG.png) url(../images/floweymoneyeyesBIG.png) url(../images/floweyhappyBIG.png) url(../images/floweymoneyeyesBIG.png) url(../images/floweymoneyeyesBIG2.png) url(../images/floweycuteBIG.png) url(../images/floweycoolBIG.png) url(../images/floweywinkBIG.png);
 }
 /*Adding CSS*/
 
@@ -35,22 +41,17 @@ body:after{
 	 		Base Styles
 ****************************/
 
-
-
-
 * {
-	font-family: dtm-sans;
-    font-size: 1.5rem;
-	text-align: center;
-	margin: auto ;
 	box-sizing: border-box;
 }
 
 body {
-	
+	font-family: dtm-sans;
+	margin: auto;
 	background: black;
 	text-align: center ;
 	color: white;
+	padding-left: 10%;
 }
 
 ul  {
@@ -84,10 +85,53 @@ iframe {
 	 		 About
 ****************************/
 
+.about {
+	font-size: 1.9rem;
+	word-spacing: -2px;
+	margin-bottom: -100px
+}
+
 .a-container li img {
 	align-content: center;
-	width: 100%;
+	width: 740px;
 	padding-left: 0px;
+	font-size: 2px;
+}
+
+#xscr2 p {
+	text-align: left;
+	margin-left: 6em;
+	letter-spacing: 3px;
+	word-spacing: 1px;
+}
+
+#xscr5 span {
+	padding-top: 50%;
+	word-spacing: -3px;
+	color: grey;
+	font-size: 1rem;
+}
+
+#xscr7 p {
+	line-height: em;
+}
+
+#xscr5,
+#xscr8 {
+	margin-bottom: .7em;
+}
+
+#xscr12 p {
+	margin-bottom: 9.6rem;
+}
+
+#a-lol {
+	letter-spacing: -2px;
+	font-family: 
+}
+
+#xscr12-end {
+	margin-top: 27em;
 }
 
 /***************************
@@ -106,7 +150,6 @@ iframe {
 /***************************
 	 		Classes
 ****************************/
-
 
 .page {
 	margin: 0 10%; 
@@ -130,6 +173,7 @@ iframe {
 /***************************
 	 			Flexbox
 ****************************/
+
 .flexbox, 
 .purchase,
 .media,
@@ -160,8 +204,6 @@ iframe {
 }
 
 /*Individual Customs*/
-
-
 
 /***************************
 	 		Footer

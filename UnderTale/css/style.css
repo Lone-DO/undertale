@@ -1,6 +1,4 @@
-@font-face {
-	font-family:DTM-Sans;
-	src:url(../font/dtm-sans);
+@font-face {font-family:'DTM-Sans';src:url("../font/dtm-sans.otf"); format('otf');
 	
    src:url('../font/DeterminationMonoWeb.woff') format('woff'),
        url('../font/DeterminationSansWeb.woff') format('woff'), 
@@ -8,6 +6,13 @@
        url('../font/MonsterFriendBack.opentype')  format('OpenType'),
        url('../font/MonsterFriendDeluxe.svg') format('svg');
 }
+
+/*
+
+@font-face{font-family:'Nexa';src:url("../fonts/nexa/nexa_light-webfont.woff") format("woff"),url("../fonts/nexa/nexa_light-webfont.ttf") format("truetype")}@font-face{font-family:'Nexa';src:url("../fonts/nexa/nexa_bold-webfont.woff") format("woff"),url("../fonts/nexa/nexa_bold-webfont.ttf") format("truetype");font-weight:bold}
+
+*/
+
 
 /*I have no idea what this is for*/
 
@@ -34,7 +39,8 @@ body:after{
 
 
 * {
-	font-family: verdana;
+	font-family: dtm-sans;
+    font-size: 1.5rem;
 	text-align: center;
 	margin: auto ;
 	box-sizing: border-box;

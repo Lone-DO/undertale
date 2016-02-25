@@ -289,3 +289,15 @@ a.magnific:focus {
 }
 	
 
+/*Testing*/
+
+#main {
+/*
+  position: fixed;
+  top: 1;
+  left: 25%;
+  z-index: 100;    
+    -webkit-filter: blur(10px);     
+    filter: blur(10px);
+*/
+}

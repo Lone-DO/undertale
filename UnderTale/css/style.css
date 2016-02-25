@@ -64,6 +64,20 @@ iframe {
 }
 
 /***************************
+	 		Links
+****************************/
+a {
+  text-decoration: none;
+}
+
+/*
+a:link{}
+a:hover{}
+a:active{}
+a:visited{}
+*/
+
+/***************************
 	 		Header
 ****************************/
 
@@ -99,8 +113,7 @@ about li img {
 }
 
 #xscr2 p {
-	text-align: left;
-	margin-left: 6em;
+	
 	letter-spacing: 3px;
 	word-spacing: 1px;
 }
@@ -138,6 +151,39 @@ about li img {
 	 		Contact
 ****************************/
 
+  .contact p {
+    font-family: dtm-sans;
+    font-size: 2.3em;
+  }
+  /*Div Piece Customs*/
+
+  #c-piece-1 {
+  /*  text-align: left;*/
+  }
+
+  #c-piece-unrelated {
+    color: #007cd1;
+  }
+  #c-piece-unrelated a:visited {
+    color: #007cd1
+  }
+
+  #c-piece-email {
+    color: grey;
+    font-size: 1em
+  }
+
+  #c-piece-email img {
+    max-width: 100%;
+  }
+
+  #backToFront a:visited {
+    color: yellow;
+}
+
+  #backToFront {
+    color: yellow;
+  }
 
 /***************************
 	 	Troubleshoot
@@ -241,3 +287,4 @@ a.magnific:focus {
 	}
 }
 	
+

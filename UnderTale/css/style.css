@@ -80,20 +80,43 @@ a:visited{}
 	 		Header
 ****************************/
 
+#myMenu li {
+  width: 154px;
+  height: 86px;
+  font-size: 2.4rem;
+}
 
+.y-a:visited,
+.y-a:link {
+  color: yellow;
+}
+
+#nav_merch a:visited,
+#nav_merch a:link {
+  color: #fdb2bf;
+}
+
+#nav_merch a p {
+  margin: 0;
+}
+#nav_merch a span {
+  font-size: .5em;
+}
 
 /***************************
 	 		 Index
 ****************************/
+.frameT,
+.frameM {
+  height: 21rem;
+}
 
 .frameT {
 	 width: 462px;
-	 height: 21rem;
 }
 
 .frameM {
-	 width: 456;
-	 height: 21rem;
+	 width: 456px;
 }
 
 /***************************
@@ -114,7 +137,6 @@ about li img {
 }
 
 #xscr2 p {
-	
 	letter-spacing: 3px;
 	word-spacing: 1px;
 }
@@ -124,10 +146,6 @@ about li img {
 	word-spacing: -3px;
 	color: grey;
 	font-size: 1rem;
-}
-
-#xscr7 p {
-	line-height: em;
 }
 
 #xscr5,
@@ -141,7 +159,6 @@ about li img {
 
 #a-lol {
 	letter-spacing: -2px;
-	font-family: 
 }
 
 #xscr12-end {
@@ -152,42 +169,59 @@ about li img {
 	 		Contact
 ****************************/
 
-  .contact p {
-    font-family: dtm-sans;
-    font-size: 2.3em;
-  }
-  /*Div Piece Customs*/
+.contact p {
+  font-family: dtm-sans;
+  font-size: 1.6rem;
+}
+/*Div Piece Customs*/
 
-  #c-piece-1 {
-  /*  text-align: left;*/
-  }
-
-  #c-piece-unrelated {
-    color: #007cd1;
-  }
-  #c-piece-unrelated a:visited {
-    color: #007cd1
-  }
-
-  #c-piece-email {
-    color: grey;
-    font-size: 1em
-  }
-
-  #c-piece-email img {
-    max-width: 100%;
-  }
-
-  #backToFront a:visited {
-    color: yellow;
+#c-piece-1 {
+  font-size: .63em;
+  width: 660px;
+  margin: auto;
+  text-align: left;
 }
 
-  #backToFront {
-    color: yellow;
-  }
+#c-piece-unrelated a:link,
+#c-piece-unrelated a:visited {
+  color: #007cd1;
+}
+
+#c-piece-email {
+  color: grey;
+  font-size: 1em
+}
+
+#c-piece-email img {
+  max-width: 100%;
+}
+
+#backToFront,
+#backToFront a:visited,
+#backToFront a:link {
+  color: yellow;
+}
 
 /***************************
-	 	Troubleshoot
+	 	     FAQ
+****************************/
+#faq {
+  font-size: 2rem;
+  width: 70%;
+  margin: auto;
+}
+
+#faq-p h1 {
+  font-size: 3rem;
+}
+
+#faq,
+#faq-p h1 {
+  text-align: left;
+}
+
+/***************************
+	 	 Troubleshoot
 ****************************/
 
 .left {
@@ -195,19 +229,15 @@ about li img {
 }
 
 /***************************
-	 		Classes
+	 Universal Classes
 ****************************/
 
 .page {
-	 
+	 width: 100%;
 }
 
 .hide {
 	 display: none;
-}
-
-#logo {
-	 display: ;
 }
 
 #tune {
@@ -226,7 +256,9 @@ about li img {
 .media,
 .merch,
 .a-container {
-	 display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /*Columns*/
 .flexbox,
@@ -237,46 +269,15 @@ about li img {
 .purchase,
 .merch,
 .a-container {
-	 flex-flow: column;
-	justify-content: center;
+  flex-flow: column;
+	justify-content: er;
 }
-
-.frameT {
-	flex-grow: 2;
-}
-
-/*Middle Purchase Frame*/
-.frameM {
-	flex-grow: 1;
-}
-
 /*Individual Customs*/
 
 /***************************
 	 		Footer
 ****************************/
 
-/**********************************
-Magnific jQuery Plugin
-***********************************/
-
-/* padding-bottom and top for image */
-.mfp-no-margins img.mfp-img {
-	padding: 0;
-}
-/* position of shadow behind the image */
-.mfp-no-margins .mfp-figure:after {
-	top: 0;
-	bottom: 0;
-}
-/* padding for main container */
-.mfp-no-margins .mfp-container {
-	padding: 0;
-}
-
-a.magnific:focus {
-  outline: none;
-}
 
 /***************************
 	 		Media Queries

@@ -49,9 +49,8 @@ body {
 	font-family: dtm-sans;
 	margin: auto;
 	background: black;
-	text-align: center ;
+	text-align: center;
 	color: white;
-	padding-left: 10%;
 }
 
 ul  {
@@ -80,6 +79,8 @@ a:visited{}
 /***************************
 	 		Header
 ****************************/
+
+
 
 /***************************
 	 		 Index
@@ -198,7 +199,7 @@ about li img {
 ****************************/
 
 .page {
-	margin: 0 10%; 
+	 
 }
 
 .hide {
@@ -206,7 +207,7 @@ about li img {
 }
 
 #logo {
-	 display: block;
+	 display: ;
 }
 
 #tune {

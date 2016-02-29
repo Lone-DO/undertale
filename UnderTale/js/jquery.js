@@ -10,6 +10,8 @@
 //    });
 //});
 
+
+//onclick events that display Ajax links iside #main div,
 $(function () {
   'use strict';
   $("#nav_about").on("click", 'a', function () {
@@ -37,3 +39,11 @@ $(function () {
     alert('loaded');
   });
 });
+
+//onclick eevnt that closes #main div
+
+$(this).onclick(function() {
+		('#main').hide();
+});
+//Create Trasnsparent backround overpage upon overview 
+//fade in and out Animation

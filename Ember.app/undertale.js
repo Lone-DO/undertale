@@ -1,0 +1,1 @@
+Undertale = Ember.Application.create();

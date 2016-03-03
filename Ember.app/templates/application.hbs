@@ -1,12 +1,65 @@
 <div class="container">
-  <nav class="navbar navbar-default" role="navigation">
-    <ul class="nav navbar-nav">
-      <li>{{#link-to 'memories'}}Memories{{/link-to}}</li>
-      <li>{{#link-to 'recent-comments'}}Recent Comments{{/link-to}}</li>
-      <li>{{#link-to 'about'}}About{{/link-to}}</li>
-      <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    </ul>
-  </nav>
-  
-  {{outlet}}
+  <div id="header">
+    <header>
+      {{#link-to 'undertale'}}
+        <img id="logo" src="../images/undertale_logo.png">
+      {{/link-to}}
+      <nav class="navbar navbar-default" role="navigation">
+        <ul class="nav navbar-nav flexbox" id="myMenu">
+    <!--      About-->
+    <!--      <li id="nav_about" class="Y-a" href="#" data-id="about">-->
+          <li>
+            {{#link-to 'about'}}ABOUT{{/link-to}}
+          </li>
+    <!--      DEMO-->
+    <!--      <li id="nav_demo" class="Y-a">-->
+          <li>
+            {{#link-to 'demo'}}DEMO{{/link-to}}
+          </li>
+    <!--      External Merch-->
+    <!--      <li id="nav_merch">-->
+          <li>
+            MERCH<br>
+            <span>new!</span>
+          </li>
+    <!--      Contact-->
+    <!--      <li id="nav_contact" class="Y-a" href="#">-->
+          <li>
+            {{#link-to 'contact'}}CONTACT{{/link-to}}
+          </li>
+    <!--      FAQ-->
+    <!--      <li id="nav_faq" class="y-a" href="#">-->
+          <li>
+            {{#link-to 'faq'}}FAQ!{{/link-to}}
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <div class="page">
+    {{outlet}}
+  </div>
+  <div id="footer">
+  <footer>
+      <nav>
+        <ul>
+           <li>
+              {{#link-to 'troubleshoot'}}<!--TROUBLESHOOTING-->
+                <img src="images/troubleshoot.png"></a>
+              {{/link-to}}
+           </li>
+           <li>
+              <a href="http://twitter.com/undertale">
+                <img src="images/twitterbutton.png"></a>
+
+              <a href="http://undertale.tumblr.com/">
+                <img src="images/tumblrbutton.png"></a>
+
+              <a href="http://store.steampowered.com/app/391540">
+                <img src="images/steambutton.png"></a>
+           </li>
+        </ul>
+      </nav>
+  </footer>
+  </div><!--End Bottom-Navigation-->
 </div>

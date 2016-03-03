@@ -1,22 +1,22 @@
 @font-face {
 	font-family:'DTM-Sans';
-		src:url("../font/dtm-sans.otf");
+		src:url("../fonts/dtm-sans.otf");
 	
 /*
    font-family:'DeterminationMonoWeb';
-		src:url("../font/DeterminationMonoWeb.woff");
+		src:url("../fonts/DeterminationMonoWeb.woff");
 		
 	font-family:'DeterminationSansWeb';
-		src:url("../font/DeterminationSansWeb.woff");
+		src:url("../fonts/DeterminationSansWeb.woff");
 			
 	font-family:'DTM-Mono';
-		src:url("../font/DTM-Mono.opentype");
+		src:url("../fonts/DTM-Mono.opentype");
 	
 	font-family:'MonsterFriendBack';
-		src:url("../font/MonsterFriendBack.opentype"); 
+		src:url("../fonts/MonsterFriendBack.opentype"); 
 			
 	font-family:'MonsterFriendDeluxe';
-		src:url("../font/MonsterFriendDeluxe.svg");
+		src:url("../fonts/MonsterFriendDeluxe.svg");
 */
 }
 
@@ -311,3 +311,21 @@ about li img {
 		color:#ccc;
 		overflow-y:scroll;
 }
+
+.spotify-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+}
+    .spotify-container iframe,
+    .spotify-container object,
+    .spotify-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }

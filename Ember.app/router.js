@@ -6,9 +6,9 @@ Undertale.Router.map(function () {
   this.resource('merch');
   this.resource('faq');
   this.resource('troubleshoot');
-  this.resource('mailbox');
   this.resource('fanmail', function () {
     this.resource('newmail');
+    this.resource('mailbox');
   });
   this.resource('gallery');
   this.resource('musicbox');

@@ -2,10 +2,10 @@
   <div id="header">
     <header>
       {{#link-to 'undertale'}}
-      <img id="logo" src="../images/undertale_logo.png"></img>
+      <img id="logo" src="../images/undertale_logo.png">
       {{/link-to}}
-      <nav class="navbar navbar-default" role="navigation">
-        <ul class="nav navbar-nav flexbox" id="myMenu">
+      <nav class="navbar navbar-default mymenu" role="navigation">
+        <ul class="nav navbar-nav row">
         <!--      About-->
           <li id="nav_about" class="Y-a" data-id="about">
             {{#link-to 'about'}}ABOUT{{/link-to}}
@@ -38,6 +38,10 @@
           <!--      Musicbox Page-->
           <li>
             {{#link-to 'musicbox'}}♫Musicbox♫{{/link-to}}
+          </li>
+					<!--      Musicbox Page-->
+          <li>
+            {{#link-to 'mailbox'}}Mailbox{{/link-to}}
           </li>
         </ul>
       </nav>

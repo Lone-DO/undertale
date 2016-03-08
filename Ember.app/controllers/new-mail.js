@@ -1,21 +1,23 @@
-Undertale.NewmailController = Ember.Controller.extend({
+Undertale.NewMailController = Ember.Controller.extend({
+  needs: ['fanmail'],
   actions: {
-    needs: ['fanmail'],
     //Create mail
     save: function () {
       'use strict';
-      var mail = this.store.createRecord('mail', {
+      var newMail = this.store.createRecord('mail', {
+        //attaches to {{user}}
+        user: this.get('user'),
         //attaches to {{text}}
         text: this.get('text')
       });
       //Save Mail
-      mail.save();
-      //Pushes Mail to page/archive
-      var fanmail = this.get('controllers.fanmail.model');
-      post.get('letters').pushObject(mail);
-      post.save();
+      newMail.save();
+//      //Pushes Mail to page/archive
+//      var fanmail = this.get('controllers.fanmail.model');
+//      fanmail.get('letters').pushObject(mail);
+//      fanmail.save();
       //takes user to Fanmail Page after saving New Mail
-      this.transitionToRoute('fanmail', fanmail.id);
+      this.transitionToRoute('mailbox');
     }
   }
 });

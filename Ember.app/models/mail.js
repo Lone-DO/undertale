@@ -1,5 +1,6 @@
 Undertale.Mail = DS.Model.extend({
   //Sets up relationship with Fanmail Page
+  user: DS.attr(),
   text: DS.attr(),
-  memory: DS.belongsTo('fanmail', {async: true})
+  fanmail: DS.belongsTo('fanmail', {async: true})
 });

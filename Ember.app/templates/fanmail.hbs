@@ -7,10 +7,18 @@
 
 <h2>Inbox</h2>
 
-{{#each letters}}
-  <p>{{text}}</p>
-{{/each}}
+<ul>
+  {{#each}}
+    <li>{{user}}{{text}}</li>
+  {{/each}}
+</ul>
 
-<p>{{#link-to 'newmail' this.id class="btn btn-default"}}New Mail{{/link-to}}</p>
+<p><a href="#" {{action 'sortByRecent'}}>Sort by Recent</a></p>
+
+<p>{{#link-to 'new-mail' class="btn btn-default"}}New Mail{{/link-to}}</p>
 
 {{outlet}}
+
+<!--Fanmail is the Placeholder page-->
+<!--Mailbox (recent-comments) All collective letters -->
+<!--NewMail () All collective letters -->

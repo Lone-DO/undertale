@@ -9,8 +9,9 @@ Undertale.Router.map(function () {
   this.resource('contact');
 //  New Site Features
   this.resource('fanmail', function () {
-    this.resource('newmail');
     this.resource('mailbox');
+    this.resource('new-mail');
+    this.resource('mail');
   });
   this.resource('gallery');
   this.resource('musicbox');

@@ -126,10 +126,8 @@ a:visited{}
 /***************************
 	 		Modal temp...
 ****************************/
-html, body {
-    margin: 20px;
-}
 
+/*
 .modal {
   position: relative;
   margin: 10px auto;
@@ -154,6 +152,7 @@ input {
 .flush--top {
   margin-top: 0;  
 }
+*/
 
 /***************************
 	 		 Index

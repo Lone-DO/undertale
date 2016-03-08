@@ -124,6 +124,38 @@ a:visited{}
 }
 
 /***************************
+	 		Modal temp...
+****************************/
+html, body {
+    margin: 20px;
+}
+
+.modal {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  background-color: #fff;
+  padding: 1em;
+}
+
+input {
+  width: 100%;
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flush--top {
+  margin-top: 0;  
+}
+
+/***************************
 	 		 Index
 ****************************/
 #purchase iframe {

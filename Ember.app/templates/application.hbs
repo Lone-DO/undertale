@@ -16,7 +16,9 @@
           </li>
         <!--      External Merch-->
           <li id="nav_merch">
-            <a href="#">MERCH<br>
+            <a href="http://www.fangamer.com/collections/undertale" 
+               data-toggle="modal" href="#myModal">
+              MERCH<br>
             <span>new!</span></a>
           </li>
         <!--      Contact-->
@@ -45,6 +47,7 @@
   </div>
   <div class="page">
     {{outlet}}
+    {{outlet 'modal'}} <!--Modal Beta Module-->
   </div>
   <div id="footer">
   <footer>

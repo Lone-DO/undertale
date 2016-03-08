@@ -1,11 +1,13 @@
 Undertale.Router.map(function () {
-  this.resource('undertale', {path: '/'});
+  this.resource('undertale', function() {
+    this.resource('troubleshoot');
+    this.resource('faq');
+  });
   this.resource('about');
-  this.resource('contact');
   this.resource('demo');
   this.resource('merch');
-  this.resource('faq');
-  this.resource('troubleshoot');
+  this.resource('contact');
+//  New Site Features
   this.resource('fanmail', function () {
     this.resource('newmail');
     this.resource('mailbox');

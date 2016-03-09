@@ -1,5 +1,5 @@
 Undertale.NewMailController = Ember.Controller.extend({
-  needs: ['fanmail'],
+  needs: ['mailbox'],
   actions: {
     //Create mail
     save: function () {

@@ -8,11 +8,13 @@ Undertale.Router.map(function () {
   this.resource('merch');
   this.resource('contact');
 //  New Site Features
-  this.resource('fanmail', function () {
-    this.resource('mailbox');
+  //Fanmail Interface
+  this.resource('mailbox', function () {
     this.resource('new-mail');
     this.resource('mail');
   });
+  //Gallery for Fan made Art Collections
   this.resource('gallery');
+  //Musicbox for variety of Undertale Hit tunes
   this.resource('musicbox');
 });

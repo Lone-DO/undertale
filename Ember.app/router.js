@@ -10,8 +10,8 @@ Undertale.Router.map(function () {
 //  New Site Features
   //Fanmail Interface
   this.resource('mailbox', function () {
+    this.resource('mail', {path: 'mails/:mail_id'});
     this.resource('new-mail');
-    this.resource('mail');
   });
   //Gallery for Fan made Art Collections
   this.resource('gallery');

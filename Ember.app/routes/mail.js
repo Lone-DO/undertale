@@ -1,6 +1,7 @@
 Undertale.MailRoute = Ember.Route.extend({
-  model: function (params) {
-    return this.store.find('mail', parmas.mail_id);
+  model: function () {
+    'use strict';
+    return this.store.find('mail');
 //    return mailbox.findBy('id');
   }
 });

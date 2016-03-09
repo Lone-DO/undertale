@@ -1,5 +1,4 @@
 <h1>{{user}}</h1>
-<h2>Speak Out!</h2>
 {{#if isEditing}}
   <form>
     <div class="form-group">
@@ -19,5 +18,5 @@
 {{else}}
   <p>{{text}}</p>
   <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <button class="btn btn-primary" {{action 'delete'}}>delete</button>
 {{/if}}
-

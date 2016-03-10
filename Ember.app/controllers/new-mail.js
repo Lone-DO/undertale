@@ -1,5 +1,4 @@
 Undertale.NewMailController = Ember.Controller.extend({
-  needs: ['mailbox'],
   actions: {
     //Create mail
     save: function () {
@@ -12,11 +11,6 @@ Undertale.NewMailController = Ember.Controller.extend({
       });
       //Save Mail
       newMail.save();
-//      //Pushes Mail to page/archive
-//      var fanmail = this.get('controllers.fanmail.model');
-//      fanmail.get('letters').pushObject(mail);
-//      fanmail.save();
-      //takes user to Fanmail Page after saving New Mail
       this.transitionToRoute('mailbox');
     }
   }

@@ -10,7 +10,7 @@
 <ul>
   {{#each}}
     <li>
-      {{#link-to 'mail' this.id}}{{user}}: {{text}}{{/link-to}}
+      {{#link-to 'mail' this.id}}@{{user}} Says: {{text}}{{/link-to}}
   </li>
   {{/each}}
 </ul>

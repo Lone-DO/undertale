@@ -11,8 +11,8 @@ Undertale.Router.map(function () {
   //Fanmail Interface
   this.resource('mailbox', function () {
     this.resource('mail', {path: 'mails/:mail_id'});
-    this.resource('new-mail');
   });
+  this.resource('new-mail');
   //Gallery for Fan made Art Collections
   this.resource('gallery');
   //Musicbox for variety of Undertale Hit tunes

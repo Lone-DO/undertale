@@ -13,7 +13,18 @@
     <button class="btn btn-primary" {{action 'save'}}>Save mail :D</button>
   </form>
 {{else}}
-  <p>@{{user}}: Says  {{text}}</p>
+  <h3>@{{user}}: Says  {{text}}</h3>
   <button class="btn btn-primary" {{action 'edit'}}>Edit Note</button>
   <button class="btn btn-primary" {{action 'delete'}}>delete</button>
 {{/if}}
+
+{{#each replies}}
+  <p>{{text}}</p>
+{{/each}}
+
+<p>
+  {{#link-to 'new-reply' this.id class="btn btn-default"}}Reply{{/link-to}}
+</p>
+<div class="replyBox">
+  {{outlet}}
+</div>

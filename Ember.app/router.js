@@ -1,5 +1,5 @@
 Undertale.Router.map(function () {
-  this.resource('undertale', function() {
+  this.resource('undertale', function () {
     this.resource('troubleshoot');
     this.resource('faq');
   });
@@ -10,7 +10,9 @@ Undertale.Router.map(function () {
 //  New Site Features
   //Fanmail Interface
   this.resource('mailbox', function () {
-    this.resource('mail', {path: 'mails/:mail_id'});
+    this.resource('mail', {path: 'mails/:mail_id'}, function () {
+      this.resource('new-reply');
+    });
   });
   this.resource('new-mail');
   //Gallery for Fan made Art Collections

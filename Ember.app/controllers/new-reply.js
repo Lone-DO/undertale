@@ -1,6 +1,6 @@
 Undertale.NewReplyController = Ember.Controller.extend({
+  needs: ['mail'],
   actions: {
-    needs: ['mail'],
     save: function () {
       'use strict';
       var reply = this.store.createRecord('reply', {

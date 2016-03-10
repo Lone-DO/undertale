@@ -13,7 +13,7 @@
     <button class="btn btn-primary" {{action 'save'}}>Save mail :D</button>
   </form>
 {{else}}
-  <p>{{text}}</p>
-  <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
+  <p>@{{user}}: Says  {{text}}</p>
+  <button class="btn btn-primary" {{action 'edit'}}>Edit Note</button>
   <button class="btn btn-primary" {{action 'delete'}}>delete</button>
 {{/if}}

@@ -2,51 +2,50 @@
   <div id="header">
     <header>
       {{#link-to 'undertale'}}
-      <img id="logo" src="../images/undertale_logo.png">
+        <img id="logo" src="../images/undertale_logo.png">
       {{/link-to}}
       <nav class="navbar navbar-default mymenu" role="navigation">
         <ul class="nav navbar-nav row">
-        <!--      About-->
+        <!--  ABOUT -->
           <li id="nav_about" class="Y-a" data-id="about">
             {{#link-to 'about'}}ABOUT{{/link-to}}
           </li>
-        <!--      DEMO-->
+        <!--  DEMO  -->
           <li id="nav_demo" class="Y-a">
             {{#link-to 'demo'}}DEMO{{/link-to}}
           </li>
-        <!--      External Merch-->
+        <!--  External Merch  -->
           <li id="nav_merch">
             <a href="http://www.fangamer.com/collections/undertale" 
                data-toggle="modal" href="#myModal">
-              MERCH<br>
+            MERCH<br>
             <span>new!</span></a>
           </li>
-        <!--      Contact-->
+        <!--  CONTACT -->
           <li id="nav_contact" class="Y-a">
             {{#link-to 'contact'}}CONTACT{{/link-to}}
           </li>
-        <!--      FAQ-->
+        <!--  FAQ -->
           <li id="nav_faq" class="y-a">
             {{#link-to 'faq'}}FAQ!{{/link-to}}
           </li>
-        <!--      Fan Page-->
+        <!--  Fan Page  -->
           <li>
             {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
           </li>
-          <!--      Gallery Page-->
+        <!--  Gallery Page  -->
           <li>
             {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
           </li>
-          <!--      Musicbox Page-->
+        <!--  Musicbox Page -->
           <li>
             {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
           </li>
         </ul>
       </nav>
     </header>
-  </div>
+  </div><!--Top of Site-->
   <div class="page">
-    {{outlet 'modal'}} <!--Modal Beta Module-->
     {{outlet}}
   </div>
   <div id="footer">
@@ -54,7 +53,7 @@
       <nav>
         <ul>
            <li>
-              {{#link-to 'troubleshoot'}}<!--TROUBLESHOOTING-->
+              {{#link-to 'troubleshoot'}}<!-- TROUBLESHOOTING -->
                 <img src="images/troubleshoot.png">
               {{/link-to}}
            </li>
@@ -71,5 +70,5 @@
         </ul>
       </nav>
   </footer>
-  </div><!--End Bottom-Navigation-->
-</div>
+  </div><!--  End of Footer -->
+</div><!--  Bottom of Site  -->

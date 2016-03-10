@@ -1,30 +1,41 @@
+<!--  If in Editor Mode -->
 {{#if isEditing}}
   <form>
+    <!--  Input UserName  -->
     <div class="form-group">
       <label for="user">{{user}}</label>
       {{input id="user" class="form-control" value=user}}
     </div>
-
+    <!--   Input Text  -->
     <div class="form-group">
       <label for="text">{{text}}</label>
       {{textarea id="text" class="form-control" rows='5' value=text}}
     </div>
-
+    <!--  Save To Mailbox -->
     <button class="btn btn-primary" {{action 'save'}}>Save mail :D</button>
   </form>
+<!--  Otherwise, Display Content-->
 {{else}}
-  <h3>@{{user}}: Says  {{text}}</h3>
+  <!--  Ex. @John Smith: Says "_"  -->
+  <h3>@{{user}}: Says " {{text}} "</h3>
   <button class="btn btn-primary" {{action 'edit'}}>Edit Note</button>
   <button class="btn btn-primary" {{action 'delete'}}>delete</button>
 {{/if}}
 
-{{#each replies}}
-  <p>{{text}}</p>
-{{/each}}
+{{#if repliesAreShowing}}
+  <button class="btn btn-info" {{action 'hideReplies'}}>
+    Hide Comments!</button>
 
-<p>
-  {{#link-to 'new-reply' this.id class="btn btn-default"}}Reply{{/link-to}}
-</p>
-<div class="replyBox">
-  {{outlet}}
-</div>
+  <div class="replyBox">
+    {{#each replies}}
+      <p>{{text}}</p>
+    {{/each}}
+  </div>
+
+  <p>
+    {{#link-to 'new-reply' this.id class="btn btn-default"}}Reply{{/link-to}}
+  </p>
+
+{{else}}
+  <button class="btn btn-info" {{action 'showReplies'}}>Show Replies</button>
+{{/if}}

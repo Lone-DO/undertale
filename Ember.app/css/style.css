@@ -101,6 +101,7 @@ a:visited{}
 }
 
 .mymenu ul li {
+  color: yellow;
 	text-shadow: 0 1px 0 #ccc,
                0 2px 0 #c9c9c9,
                0 3px 0 #bbb,
@@ -133,37 +134,6 @@ a:visited{}
 }
 
 /***************************
-	 		Modal temp...
-****************************/
-
-/*
-.modal {
-  position: relative;
-  margin: 10px auto;
-  width: 300px;
-  background-color: #fff;
-  padding: 1em;
-}
-
-input {
-  width: 100%;
-}
-
-.overlay {
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.flush--top {
-  margin-top: 0;  
-}
-*/
-
-/***************************
 	 		 Index
 ****************************/
 #purchase iframe {
@@ -176,6 +146,16 @@ input {
 #merch img,
 #purchase iframe {
 	width: 100%;
+}
+
+#preview {
+  display: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#content {
+  z-index: 0;
 }
 
 /***************************

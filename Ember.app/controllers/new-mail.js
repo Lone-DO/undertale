@@ -3,9 +3,9 @@ Undertale.NewMailController = Ember.Controller.extend({
     //Create mail
     save: function () {
       'use strict';
-      var $userReady = this.user.val().length,
-        $textReady = this.text.val().length,
-        newMail = this.store.createRecord('mail', {
+//      var $userReady = this.user.val().length,
+//        $textReady = this.text.val().length,
+        var newMail = this.store.createRecord('mail', {
           //attaches to {{user}}
           user: this.get('user'),
           //attaches to {{text}}

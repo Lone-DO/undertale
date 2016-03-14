@@ -1,0 +1,8 @@
+<script type="text/x-handlebars" data-template-name="library">
+      <h1>Music Library</h1>
+      <ul class="albums">
+        {{#each controller}}
+          <li class="album">{{template "album"}}</li>
+        {{/each}}
+      </ul>
+    </script>

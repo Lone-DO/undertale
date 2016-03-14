@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Undertale in Ember</title>
+    <meta http-equiv="content-type" content="text/html" charset="windows-1252">
+    <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
+<!--    Styles Sheets-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">  
+<!--    Library Files-->
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="libs/handlebars-v1.3.0.js"></script>
+    <script src="libs/ember1.8.1.js"></script>
+    <script src="libs/ember-handlebars-loader-0.0.2.js"></script>
+    <script src="http://builds.emberjs.com/tags/v1.13.16/ember-data.js"></script>
+    <script src="libs/localstorage_adapter.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+<!--   Scripts/ Routes -->
+    <script src="undertale.js"></script>
+    <script src="router.js"></script>
+    <script src="store.js"></script>
+<!--    Controllers-->
+    <script src="controllers/about.js"></script>
+    <script src="controllers/contact.js"></script>
+    <script src="controllers/demo.js"></script>
+    <script src="controllers/faq.js"></script>
+    <script src="controllers/troubleshoot.js"></script>
+    <script src="controllers/mailbox.js"></script>
+    <script src="controllers/mail.js"></script>
+    <script src="controllers/new-mail.js"></script>
+    <script src="controllers/new-reply.js"></script>
+    
+<!--    Routes-->
+    <script src="routes/mailbox.js"></script>
+    <script src="routes/mail.js"></script>
+<!--    Models-->
+    <script src="models/mail.js"></script>
+    <script src="models/mailbox.js"></script>
+    <script src="models/reply.js"></script>
+<!--    Templates-->
+    <script>
+      EmberHandlebarsLoader.loadTemplates(['hub', 'application', 'about', 'demo', 'troubleshoot', 'mailbox', 'mail', 'new-mail', 'new-reply', 'contact', 'faq', 'musicbox', 'gallery', 'merch'])
+    </script>
+  </head>
+  <body>
+  
+  </body>
+</html>

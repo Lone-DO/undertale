@@ -19,6 +19,7 @@
     <script src="undertale.js"></script>
     <script src="router.js"></script>
     <script src="store.js"></script>
+    <script src="albums.json"></script>
 <!--    Controllers-->
     <script src="controllers/about.js"></script>
     <script src="controllers/contact.js"></script>
@@ -28,18 +29,27 @@
     <script src="controllers/mailbox.js"></script>
     <script src="controllers/mail.js"></script>
     <script src="controllers/new-mail.js"></script>
-    <script src="controllers/new-reply.js"></script>
-    
+    <script src="controllers/player.js"></script>
+    <script src="controllers/playlist.js"></script>
+    <script src="controllers/playlist-album.js"></script>
+    <script src="controllers/playlist-track.js"></script>
 <!--    Routes-->
+    <script src="routes/application.js"></script>
     <script src="routes/mailbox.js"></script>
     <script src="routes/mail.js"></script>
+    <script src="routes/musicbox.js"></script>
+    <script src="routes/library.js"></script>
 <!--    Models-->
     <script src="models/mail.js"></script>
     <script src="models/mailbox.js"></script>
     <script src="models/reply.js"></script>
+<!--    Views-->
+    <script src="views/library.js"></script>
+    <script src="views/player.js"></script>
+    <script src="views/playlist.js"></script>
 <!--    Templates-->
     <script>
-      EmberHandlebarsLoader.loadTemplates(['hub', 'application', 'about', 'demo', 'troubleshoot', 'mailbox', 'mail', 'new-mail', 'new-reply', 'contact', 'faq', 'musicbox', 'gallery', 'merch'])
+      EmberHandlebarsLoader.loadTemplates(['hub', 'application', 'about', 'demo', 'troubleshoot', 'mailbox', 'mail', 'new-mail', 'new-reply', 'contact', 'faq', 'musicbox', 'playlist' , 'player', 'album', 'library', 'gallery', 'merch'])
     </script>
   </head>
   <body>

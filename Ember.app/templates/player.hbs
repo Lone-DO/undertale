@@ -1,9 +1,7 @@
-<script type="text/x-handlebars" data-template-name="player">
-      {{#if isPlaying}}
-        <button class="control pause" {{action pause}}>Pause</button>
-      {{else}}
-        <button class="control play" {{action play}}>Play</button>
-      {{/if}}
-      <button class="control prev" {{action prev}}>Prev</button>
-      <button class="control next" {{action next}}>Next</button>
-    </script>
+{{#if isPlaying}}
+  <button class="control pause" {{action pause}}>Pause</button>
+{{else}}
+  <button class="control play" {{action play}}>Play</button>
+{{/if}}
+<button class="control prev" {{action prev}}>Prev</button>
+<button class="control next" {{action next}}>Next</button>

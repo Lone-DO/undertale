@@ -1,9 +1,9 @@
-<button class="queue add" {{action queueAlbum this}}><img src="../images/add.png"></button>
-<button class="queue remove" {{action dequeueAlbum this.content}}><img src="../images/remove.png"></button>
+<button class="queue add" {{action 'queueAlbum' this}}><img src="../images/add.png"></button>
+<button class="queue remove" {{action 'dequeueAlbum' this.content}}><img src="../images/remove.png"></button>
 <span class="album-title">{{title}}</span>&nbsp;&nbsp;
 <span class="artist-name">{{artist}}</span>
 <ol class="tracks">
-  {{#each tracks itemController="playlistTrack"}}
+  {{#each tracks itemController="playlist-track"}}
     <li {{bind-attr class="current"}}>{{title}}</li>
   {{/each}}
 </ol>

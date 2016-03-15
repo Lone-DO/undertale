@@ -71,9 +71,12 @@ $(document).ready(function () {
         var photos = data.response.posts;
         $.each(photos, function (i) {
           var url = photos[i].image_permalink,
-            sum = photos[i].summary;
-          
-          console.log(url, sum);
+            sum = photos[i].summary,
+            photo = '<ul>';
+          photo += '<li>' + '<a href="' + url + '" class="image">';
+          photo += '<img src="' + url + '"></a></li>';
+          photo += '</ul>';
+          console.log(photo, sum);
         });
         console.log('Photo Loop done');
         console.log(photos);

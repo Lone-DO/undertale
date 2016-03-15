@@ -398,3 +398,8 @@ li a {
 .inbox ul {
 	padding-left: 0;
 }
+#footer {
+  display: absolute;
+  bottom: 0;
+  left: 0;
+}

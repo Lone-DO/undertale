@@ -1,6 +1,8 @@
+/**/
 html, body {
   height: 100%;
 }
+
 
 body {
 	margin: 0;
@@ -89,7 +91,7 @@ nav button.pause:hover {
 
 nav button.prev {
     background: url('../images/control_start.png') center no-repeat;
-}
+} 
 
 nav button.prev:hover {
     background: url('../images/control_start_hover.png') center no-repeat;
@@ -125,5 +127,4 @@ nav button.next:hover {
 .library .album .tracks {
     display: none;
 }
-
 /* vim:set sw=4:ts=4:expandtab */

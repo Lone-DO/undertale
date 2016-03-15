@@ -3,7 +3,7 @@
 <span class="album-title">{{title}}</span>&nbsp;&nbsp;
 <span class="artist-name">{{artist}}</span>
 <ol class="tracks">
-  {{#each tracks itemController="playlist-track"}}
+  {{#each tracks itemController="playlistTrack"}}
     <li {{bind-attr class="current"}}>{{title}}</li>
   {{/each}}
 </ol>

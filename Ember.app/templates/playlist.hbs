@@ -1,0 +1,7 @@
+<h1>Playlist</h1>
+{{render 'player' player}}
+<ul class="albums">
+  {{#each controller itemController="playlistAlbum"}}
+    <li {{bind-attr class=":album current"}}>{{partial "album"}}</li>
+  {{/each}}
+</ul>

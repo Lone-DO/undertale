@@ -271,7 +271,7 @@ a:link[href*="mailbox/mails"],
 a:visited[href*="mailbox/mails"] {
 	color: white;
 	text-underline-position: none;
-	border: solid 1px red;
+	border-bottom: solid 1px;
 }
 
 a:hover[href*="mailbox/mails"]{
@@ -362,7 +362,7 @@ li a {
 }
 
 .overlaywhite {
-		display:none;
+		display:block;
 		position:fixed;
 		top:0;
 		width:100%;
@@ -397,4 +397,9 @@ li a {
 
 .inbox ul {
 	padding-left: 0;
+}
+#footer {
+  display: absolute;
+  bottom: 0;
+  left: 0;
 }

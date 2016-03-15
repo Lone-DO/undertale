@@ -45,12 +45,37 @@ $(document).ready(function () {
 //      url: tumblrAvt,
 //      dataType: 'jsonp',
 //      success: function (avatar) {
-//        console.log('Image');
-//        $("#myDivId").attr('src', avatar.response.avatar_url);
+//        console.log('AVATAR LOADED ED ED ');
 //      }
 //    });
     
+    //T-Post
+    $.ajax({
+      url: tumblrPost,
+      dataType: 'jsonp',
+      success: function (data) {
+        var posts = data.response.posts;
+        $.each(posts, function (i) {
+          console.log(posts[i].title, posts[i].body);
+        });
+        console.log('Post Loop done');
+        console.log(posts);
+      }
+    });
+    
     //T-Photos
+    $.ajax({
+      url: tumblrPhoto,
+      dataType: 'jsonp',
+      success: function (data) {
+        var photos = data.response.posts;
+        $.each(photos, function (i) {
+          console.log(photos[i].id, photos[i].date);
+        });
+        console.log('Photo Loop done');
+        console.log(photos);
+      }
+    });
 //    var opts = {
 //      format: 'json'
 //    };
@@ -80,18 +105,7 @@ $(document).ready(function () {
 //        
 //      });
 
-    $.ajax({
-      url: tumblrPost,
-      dataType: 'jsonp',
-      success: function (data) {
-        var posts = data.response.posts;
-        $.each(posts, function (i) {
-          console.log(posts[i].title, posts[i].body);
-        });
-        console.log('Loop done');
-        console.log(posts);
-      }
-    });
+    
     
   });//emd tumblr
 }); // end ready

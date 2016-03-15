@@ -4,6 +4,7 @@ Undertale.PlaylistAlbumController = Ember.ObjectController.extend({
     currentAlbum: Ember.computed.alias('controllers.playlist.currentAlbum'),
 
     current: function () {
+      'use strict';
       return this.get('content') === this.get('currentAlbum');
     }.property('content', 'currentAlbum')
   }

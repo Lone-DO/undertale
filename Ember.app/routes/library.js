@@ -1,5 +1,6 @@
 Undertale.LibraryRoute = Ember.Route.extend({
   model: function () {
+    'use strict';
     var content = [];
 
     $.ajax({

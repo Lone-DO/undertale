@@ -70,14 +70,15 @@ $(document).ready(function () {
       success: function (data) {
         var photos = data.response.posts;
         $.each(photos, function (i) {
-          var url = photos[i].image_permalink,
+          var url = photos[i].photos[0].original_size.url,
             sum = photos[i].summary,
             photo = '<ul>';
+          
           photo += '<li>' + '<a href="' + url + '" class="image">';
           photo += '<img src="' + url + '"></a></li>';
           photo += '</ul>';
           console.log(photo, sum);
-          $('#display').append(sum);
+          $('#display').append(photo);
         });
         console.log('Photo Loop done');
         console.log(photos);

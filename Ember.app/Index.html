@@ -6,7 +6,7 @@
     <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="images/favicon.ico">
 <!--    Styles Sheets-->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">  
+    <link rel="stylesheet" href="css/style.css">
 <!--    Library Files-->
     <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
     <script src="libs/handlebars-v1.3.0.js"></script>
@@ -19,6 +19,8 @@
     <script src="undertale.js"></script>
     <script src="router.js"></script>
     <script src="store.js"></script>
+    <script src="albums.json"></script>
+    <script src="js/gallery.js"></script>
 <!--    Controllers-->
     <script src="controllers/about.js"></script>
     <script src="controllers/contact.js"></script>
@@ -28,18 +30,27 @@
     <script src="controllers/mailbox.js"></script>
     <script src="controllers/mail.js"></script>
     <script src="controllers/new-mail.js"></script>
-    <script src="controllers/new-reply.js"></script>
-    
+    <script src="controllers/player.js"></script>
+    <script src="controllers/playlist.js"></script>
+    <script src="controllers/playlistAlbum.js"></script>
+    <script src="controllers/playlistTrack.js"></script>
 <!--    Routes-->
+    <script src="routes/application.js"></script>
     <script src="routes/mailbox.js"></script>
     <script src="routes/mail.js"></script>
+    <script src="routes/musicbox.js"></script>
+    <script src="routes/library.js"></script>
 <!--    Models-->
     <script src="models/mail.js"></script>
     <script src="models/mailbox.js"></script>
     <script src="models/reply.js"></script>
+<!--    Views-->
+    <script src="views/library.js"></script>
+    <script src="views/player.js"></script>
+    <script src="views/playlist.js"></script>
 <!--    Templates-->
     <script>
-      EmberHandlebarsLoader.loadTemplates(['hub', 'application', 'about', 'demo', 'troubleshoot', 'mailbox', 'mail', 'new-mail', 'new-reply', 'contact', 'faq', 'musicbox', 'gallery', 'merch'])
+      EmberHandlebarsLoader.loadTemplates(['hub', 'application', 'about', 'demo', 'troubleshoot', 'mailbox', 'mail', 'new-mail', 'new-reply', 'contact', 'faq', 'musicbox', 'playlist' , 'player', 'album', 'library', 'gallery', 'merch'])
     </script>
   </head>
   <body>

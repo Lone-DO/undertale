@@ -16,7 +16,7 @@ $(document).ready(function () {
         photoHTML += '<img src="' + photo.media.m + '"></a></li>';
       }); // end each
       photoHTML += '</ul>';
-      $('#flickr').html(photoHTML);
+      $('#display').html(photoHTML);
     }
     $.getJSON(flickerAPI, opts, displayPhotos);
 
@@ -77,6 +77,7 @@ $(document).ready(function () {
           photo += '<img src="' + url + '"></a></li>';
           photo += '</ul>';
           console.log(photo, sum);
+          $('#display').append(sum);
         });
         console.log('Photo Loop done');
         console.log(photos);

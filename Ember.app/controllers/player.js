@@ -6,6 +6,7 @@ Undertale.PlayerController = Ember.Controller.extend({
     isPlaying: false,
 
     init: function () {
+      'use strict';
       this._super();
 
       var audio = new Audio();
@@ -18,6 +19,7 @@ Undertale.PlayerController = Ember.Controller.extend({
     },
 
     play: function () {
+      'use strict';
       if (!this.get('currentTrack')) {
         return;
       }
@@ -27,11 +29,13 @@ Undertale.PlayerController = Ember.Controller.extend({
     },
 
     pause: function () {
+      'use strict';
       this.get('audio').pause();
       this.set('isPlaying', false);
     },
 
     currentTrackChanged: function () {
+      'use strict';
       var new_src = this.get('currentTrack.url');
 
       this.get('audio').src = new_src;

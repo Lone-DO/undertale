@@ -70,7 +70,10 @@ $(document).ready(function () {
       success: function (data) {
         var photos = data.response.posts;
         $.each(photos, function (i) {
-          console.log(photos[i].id, photos[i].date);
+          var url = photos[i].image_permalink,
+            sum = photos[i].summary;
+          
+          console.log(url, sum);
         });
         console.log('Photo Loop done');
         console.log(photos);

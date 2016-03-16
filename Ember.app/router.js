@@ -1,8 +1,8 @@
 Undertale.Router.map(function () {
   this.resource('hub', {path: '/'}, function () {
-    this.resource('troubleshoot');
-    this.resource('faq');
   });
+  this.resource('troubleshoot');
+  this.resource('faq');
   this.resource('about');
   this.resource('demo');
   this.resource('merch');

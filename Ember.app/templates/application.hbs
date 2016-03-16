@@ -1,57 +1,61 @@
 <div class="container">
-  <div id="header">
-    <header>
-      {{#link-to 'hub'}}
-        <img id="logo" src="../images/undertale_logo.png">
-      {{/link-to}}
-      <nav class="navbar navbar-default mymenu" role="navigation">
-        <ul class="nav navbar-nav row">
-        <!--  ABOUT -->
-          <li id="nav_about" class="Y-a" data-id="about">
-            {{#link-to 'about'}}ABOUT{{/link-to}}
-          </li>
-        <!--  DEMO  -->
-          <li id="nav_demo" class="Y-a">
-            {{#link-to 'demo'}}DEMO{{/link-to}}
-          </li>
-        <!--  External Merch  -->
-          <li id="nav_merch">
-<!--
-            <a href="http://www.fangamer.com/collections/undertale" 
-               data-toggle="modal" href="#myModal"></a>
--->
-            {{#link-to 'merch'}}MERCH<br>
-              <span>new!</span>
-            {{/link-to}}
-          </li>
-        <!--  CONTACT -->
-          <li id="nav_contact" class="Y-a">
-            {{#link-to 'contact'}}CONTACT{{/link-to}}
-          </li>
-        <!--  FAQ -->
-          <li id="nav_faq" class="y-a">
-            {{#link-to 'faq'}}FAQ!{{/link-to}}
-          </li>
-        <!--  Fan Page  -->
-          <li>
-            {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
-          </li>
-        <!--  Gallery Page  -->
-          <li>
-            {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
-          </li>
-        <!--  Musicbox Page -->
-          <li>
-            {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div><!--Top of Site-->
-  <div id='' class="page">
-<!--    render 'playlist'-->
-    {{outlet}}
-  </div>
+  {{#if navShowing}}
+    <div id="header">
+      <header>
+        {{#link-to 'hub'}}
+          <img id="logo" src="../images/undertale_logo.png">
+        {{/link-to}}
+        <nav class="navbar navbar-default mymenu" role="navigation">
+          <ul class="nav navbar-nav row">
+          <!--  ABOUT -->
+            <li >
+              <a href="#" {{action 'navHide'}}>ABOUT</a>
+            </li>
+          <!--  DEMO  -->
+            <li id="nav_demo" class="Y-a">
+              {{#link-to 'demo'}}DEMO{{/link-to}}
+            </li>
+          <!--  External Merch  -->
+            <li id="nav_merch">
+  <!--
+              <a href="http://www.fangamer.com/collections/undertale" 
+                 data-toggle="modal" href="#myModal"></a>
+  -->
+              {{#link-to 'merch'}}MERCH<br>
+                <span>new!</span>
+              {{/link-to}}
+            </li>
+          <!--  CONTACT -->
+            <li id="nav_contact" class="Y-a">
+              {{#link-to 'contact'}}CONTACT{{/link-to}}
+            </li>
+          <!--  FAQ -->
+            <li id="nav_faq" class="y-a">
+              {{#link-to 'faq'}}FAQ!{{/link-to}}
+            </li>
+          <!--  Fan Page  -->
+            <li>
+              {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
+            </li>
+          <!--  Gallery Page  -->
+            <li>
+              {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
+            </li>
+          <!--  Musicbox Page -->
+            <li>
+              {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div><!--Top of Site-->
+    <div id='' class="page">
+    <!--    render 'playlist'-->
+      {{outlet}}
+    </div>
+  {{else}}
+    {{partial 'about'}}
+  {{/if}}
   <div id="footer">
   <footer>
       <nav>

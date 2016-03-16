@@ -1,3 +1,4 @@
+//Undertale.GalleryController = Em.Controller.extend({});
 $(document).ready(function () {
   'use strict';
   
@@ -91,3 +92,6 @@ $(document).ready(function () {
 }); // end ready
 
 //API Reference: MEOW!
+//Reasons this is written in Jquery vs Ember is for many reasons, 
+  //Primary reason is that some Scripts are outside the scopes of my knowledge for the time being, that time being limited and the focus is to not only show but prove that i am aware of what i am doing. 
+  //With Jquery i know purely what is going on, as some scopes just are possible when transcripting from one Language to another, Deprecations & installations are bound, in due time features will change as well as this site. ;D i digress, 

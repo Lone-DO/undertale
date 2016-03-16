@@ -7,50 +7,37 @@
         {{/link-to}}
         <nav class="navbar navbar-default mymenu" role="navigation">
           <ul class="nav navbar-nav row">
-          <!--  ABOUT -->
-            <li >
+            <li ><!--  ABOUT -->
               <a href="#" {{action 'navHide'}}>ABOUT</a>
-            </li>
-          <!--  DEMO  -->
-            <li id="nav_demo" class="Y-a">
+             </li> 
+            <li><!--  DEMO  -->
               {{#link-to 'demo'}}DEMO{{/link-to}}
-            </li>
-          <!--  External Merch  -->
-            <li id="nav_merch">
-  <!--
-              <a href="http://www.fangamer.com/collections/undertale" 
-                 data-toggle="modal" href="#myModal"></a>
-  -->
+             </li>
+            <li id="nav_merch"><!--  External Merch  -->
               {{#link-to 'merch'}}MERCH<br>
                 <span>new!</span>
-              {{/link-to}}
-            </li>
-          <!--  CONTACT -->
-            <li id="nav_contact" class="Y-a">
+               {{/link-to}}
+             </li>
+            <li><!--  CONTACT -->
               {{#link-to 'contact'}}CONTACT{{/link-to}}
             </li>
-          <!--  FAQ -->
-            <li id="nav_faq" class="y-a">
+            <li><!--  FAQ -->
               {{#link-to 'faq'}}FAQ!{{/link-to}}
             </li>
-          <!--  Fan Page  -->
-            <li>
+            <li><!--  Fan Page  -->
               {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
             </li>
-          <!--  Gallery Page  -->
-            <li>
+            <li><!--  Gallery Page  -->
               {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
             </li>
-          <!--  Musicbox Page -->
-            <li>
+            <li><!--  Musicbox Page -->
               {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
             </li>
           </ul>
         </nav>
       </header>
     </div><!--Top of Site-->
-    <div id='' class="page">
-    <!--    render 'playlist'-->
+    <div class="page">
       {{outlet}}
     </div>
   {{else}}
@@ -61,8 +48,8 @@
       <nav>
         <ul>
           {{#if navShowing}}
-           <li>
-              {{#link-to 'troubleshoot'}}<!-- TROUBLESHOOTING -->
+           <li><!-- TROUBLESHOOTING -->
+              {{#link-to 'troubleshoot'}}
                 <img src="images/troubleshoot.png">
               {{/link-to}}
            </li>

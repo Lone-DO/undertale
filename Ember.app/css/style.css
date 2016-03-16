@@ -213,7 +213,6 @@ about li img {
 ****************************/
 
 .contact p {
-  font-family: dtm-sans;
   font-size: 1.6rem;
 }
 /*Div Piece Customs*/
@@ -227,6 +226,7 @@ about li img {
 
 #c-piece-unrelated a:link,
 #c-piece-unrelated a:visited {
+  text-decoration: none;
   color: #007cd1;
 }
 
@@ -403,3 +403,5 @@ li a {
   bottom: 0;
   left: 0;
 }
+
+

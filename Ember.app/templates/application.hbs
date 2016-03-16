@@ -60,11 +60,13 @@
   <footer>
       <nav>
         <ul>
+          {{#if navShowing}}
            <li>
               {{#link-to 'troubleshoot'}}<!-- TROUBLESHOOTING -->
                 <img src="images/troubleshoot.png">
               {{/link-to}}
            </li>
+          {{/if}}
            <li>
               <a href="http://twitter.com/undertale">
                 <img src="images/twitterbutton.png"></a>

@@ -5,6 +5,7 @@
     <label for="user">Enter Pin Name:</label>
     {{input id="user target" class="form-control" value=user 
         placeholder="Sir Pin Head" min="3" max='15'}}
+    <span>Enter a Name at least 3 characters long</span>
   </div>
   <div class="form-group">
     <label for="text">
@@ -12,11 +13,8 @@
     </label>
     {{textarea id="text" class="form-control" value=text 
         placeholder="Oh Hi There, This is random text to let you know what you Shouldn't do ;D " min="5"}}
+    <span>Text must be at least 10 characters long</span>
   </div>
-  {{#if minText}}
-    <button class="btn btn-primary" id="save" {{action 'save'}}>Save mail :D</button>
-  {{else}}
-    <button class="btn btn-primary" id="save" 
-        {{action 'save'}}>Save mail :D</button>
-  {{/if}}
+  
+    <input {{action 'save'}} id="save" class="btn btn-primary" type="submit" value="Save mail :D">
 </form>

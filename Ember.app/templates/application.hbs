@@ -1,71 +1,68 @@
 <div class="container">
   {{#if navShowing}}
-    <div id="header">
-      <header>
-        {{#link-to 'hub'}}
-          <img id="logo" src="../images/undertale_logo.png">
-        {{/link-to}}
-        <nav class="navbar navbar-default mymenu" role="navigation">
-          <ul class="nav navbar-nav row">
-            <li ><!--  ABOUT -->
-              <a href="#" {{action 'navHide'}}>ABOUT</a>
-             </li> 
-            <li><!--  DEMO  -->
-              {{#link-to 'demo'}}DEMO{{/link-to}}
-             </li>
-            <li id="nav_merch"><!--  External Merch  -->
-              {{#link-to 'merch'}}MERCH<br>
-                <span>new!</span>
-               {{/link-to}}
-             </li>
-            <li><!--  CONTACT -->
-              {{#link-to 'contact'}}CONTACT{{/link-to}}
-            </li>
-            <li><!--  FAQ -->
-              {{#link-to 'faq'}}FAQ!{{/link-to}}
-            </li>
-            <li><!--  Fan Page  -->
-              {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
-            </li>
-            <li><!--  Gallery Page  -->
-              {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
-            </li>
-            <li><!--  Musicbox Page -->
-              {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div><!--Top of Site-->
+    <header>
+      {{#link-to 'hub'}}
+        <img id="logo" src="../images/undertale_logo.png">
+      {{/link-to}}
+      <nav class="navbar navbar-default mymenu" role="navigation">
+        <ul class="nav navbar-nav row">
+          <li ><!--  ABOUT -->
+            <a href="#" {{action 'navHide'}}>ABOUT</a>
+           </li> 
+          <li><!--  DEMO  -->
+            {{#link-to 'demo'}}DEMO{{/link-to}}
+           </li>
+          <li id="nav_merch"><!--  External Merch  -->
+            {{#link-to 'merch'}}MERCH<br>
+              <span>new!</span>
+             {{/link-to}}
+           </li>
+          <li><!--  CONTACT -->
+            {{#link-to 'contact'}}CONTACT{{/link-to}}
+          </li>
+          <li><!--  FAQ -->
+            {{#link-to 'faq'}}FAQ!{{/link-to}}
+          </li>
+          <li><!--  Fan Page  -->
+            {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
+          </li>
+          <li><!--  Gallery Page  -->
+            {{#link-to 'gallery'}}Beta Gallery{{/link-to}}
+          </li>
+          <li><!--  Musicbox Page -->
+            {{#link-to 'musicbox'}}Beta ♫Musicbox♫{{/link-to}}
+          </li>
+        </ul>
+      </nav>
+    </header><!--Top of Site-->
     <div class="page">
       {{outlet}}
     </div>
   {{else}}
     {{partial 'about'}}
   {{/if}}
-  <div id="footer">
+  
   <footer>
       <nav>
         <ul>
           {{#if navShowing}}
            <li><!-- TROUBLESHOOTING -->
               {{#link-to 'troubleshoot'}}
-                <img src="images/troubleshoot.png">
+                <img src="../images/troubleshoot.png">
               {{/link-to}}
            </li>
           {{/if}}
            <li>
               <a href="http://twitter.com/undertale">
-                <img src="images/twitterbutton.png"></a>
+                <img src="../images/twitterbutton.png"></a>
 
               <a href="http://undertale.tumblr.com/">
-                <img src="images/tumblrbutton.png"></a>
+                <img src="../images/tumblrbutton.png"></a>
 
               <a href="http://store.steampowered.com/app/391540">
-                <img src="images/steambutton.png"></a>
+                <img src="../images/steambutton.png"></a>
            </li>
         </ul>
       </nav>
   </footer>
-  </div><!--  End of Footer -->
 </div><!--  Bottom of Site  -->

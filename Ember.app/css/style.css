@@ -1,24 +1,7 @@
 @font-face {
 	font-family:'DTM-Sans';
 		src:url("../fonts/dtm-sans.otf");
-	
-/*
-   font-family:'DeterminationMonoWeb';
-		src:url("../fonts/DeterminationMonoWeb.woff");
-		
-	font-family:'DeterminationSansWeb';
-		src:url("../fonts/DeterminationSansWeb.woff");
-			
-	font-family:'DTM-Mono';
-		src:url("../fonts/DTM-Mono.opentype");
-	
-	font-family:'MonsterFriendBack';
-		src:url("../fonts/MonsterFriendBack.opentype"); 
-			
-	font-family:'MonsterFriendDeluxe';
-		src:url("../fonts/MonsterFriendDeluxe.svg");
-*/
-}
+	}
 
 /*I have no idea what this is for*/
 
@@ -62,6 +45,13 @@ iframe {
 	 border: 0;
 }
 
+a:link,
+a:hover,
+a:active,
+a:visited {
+  color: yellow;
+}
+
 /***************************
 	 Universal Classes
 ****************************/
@@ -85,10 +75,7 @@ iframe {
 ****************************/
 
 /*
-a:link{}
-a:hover{}
-a:active{}
-a:visited{}
+
 */
 
 /***************************
@@ -116,11 +103,6 @@ a:visited{}
                0 20px 20px rgba(0,0,0,.15);
 }
 
-.y-a:visited,
-.y-a:link {
-  color: yellow;
-}
-
 #nav_merch a:visited,
 #nav_merch a:link {
   color: #fdb2bf;
@@ -134,8 +116,29 @@ a:visited{}
 }
 
 /***************************
-	 		 Index
+	 		 HUB
 ****************************/
+
+#main-page {
+  position: fixed;
+  top: 0;
+  z-index: 100;    
+    -webkit-filter: blur(10px);     
+    filter: blur(10px);
+}
+
+.overlaywhite {
+		display:block;
+		position:fixed;
+		top:0;
+		width:100%;
+		height:100%;
+		background:url(../img/menu-bkgrd.jpg);
+		z-index:1000;
+		color:#ccc;
+		overflow-y:scroll;
+}
+
 #purchase iframe {
 	height: 320px;
 	margin-top: 2px;
@@ -248,6 +251,7 @@ about li img {
 /***************************
 	 	     FAQ
 ****************************/
+
 #faq {
   font-size: 2rem;
   width: 70%;
@@ -287,6 +291,10 @@ li a {
 	color: black;
 }
 
+.inbox ul {
+	padding-left: 0;
+}
+
 /***************************
 	 		 Gallery
 ****************************/
@@ -295,12 +303,30 @@ li a {
 	 		 MusicBox
 ****************************/
 
+.spotify-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+.spotify-container iframe,
+.spotify-container object,
+.spotify-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /***************************
 	 	 Troubleshoot
 ****************************/
 
 .left {
-	 text-align: left;
+  text-align: left;
 }
 
 
@@ -336,8 +362,15 @@ li a {
 	 		Footer
 ****************************/
 
-#footer nav ul {
+footer {
+  display: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+footer nav ul {
 	padding-left: 0;
+  
 }
 
 /***************************
@@ -353,55 +386,15 @@ li a {
 
 /*Testing*/
 
-#main-page {
-  position: fixed;
-  top: 0;
-  z-index: 100;    
-    -webkit-filter: blur(10px);     
-    filter: blur(10px);
-}
 
-.overlaywhite {
-		display:block;
-		position:fixed;
-		top:0;
-		width:100%;
-		height:100%;
-		background:url(../img/menu-bkgrd.jpg);
-		z-index:1000;
-		color:#ccc;
-		overflow-y:scroll;
-}
 
-.spotify-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    max-width: 100%;
-    height: auto;
-}
-    .spotify-container iframe,
-    .spotify-container object,
-    .spotify-container embed {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
+
 
 
 /*Boot strap CSS Tryout*/
 
 
-.inbox ul {
-	padding-left: 0;
-}
-#footer {
-  display: absolute;
-  bottom: 0;
-  left: 0;
-}
+
+
 
 

@@ -52,7 +52,9 @@ a:active,
 a:visited {
   text-decoration: none;
 }
-
+ul.nav {
+/*  background: black;*/
+}
 /***************************
 	 Universal Classes
 ****************************/
@@ -80,13 +82,10 @@ a:visited {
 	width:  100%;
 }
 
-.mymenu ul li {
+.mymenu ul li a {
   color: yellow;
+  font-size: 1.3em;
 	text-shadow: 0 1px 0 #ccc,
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
                0 6px 1px rgba(0,0,0,.1),
                0 0 5px rgba(0,0,0,.1),
                0 1px 3px rgba(0,0,0,.3),
@@ -96,14 +95,12 @@ a:visited {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+
 #nav_merch a:visited,
 #nav_merch a:link {
   color: #fdb2bf;
 }
 
-#nav_merch a p {
-  margin: 0;
-}
 #nav_merch a span {
   font-size: .5em;
 }
@@ -133,15 +130,17 @@ a:visited {
 }
 
 #purchase iframe {
-	height: 320px;
+	min-height: 220px;
+  min-width: 300px;
 	margin-top: 2px;
 }
+
 
 #media,
 #purchase,
 #merch img,
 #purchase iframe {
-	width: 100%;
+  
 }
 
 #preview {
@@ -152,6 +151,11 @@ a:visited {
 
 #content {
   z-index: 0;
+}
+
+#youtube {
+  min-width: 600px;
+  min-height: 340px;
 }
 
 /***************************
@@ -273,9 +277,11 @@ ul > li,
 	margin-bottom: 10px;
 }
 
+/*
 li a {
 	color: black;
 }
+*/
 
 .inbox ul {
 	padding-left: 0;
@@ -315,8 +321,6 @@ li a {
   text-align: left;
 }
 
-
-
 /***************************
 	 			Flexbox
 ****************************/
@@ -331,8 +335,7 @@ li a {
   justify-content: center;
 }
 /*Columns*/
-.flexbox,
-.media {
+.flexbox, {
 	 flex-direction: row;
 }
 /*Rows*/
@@ -340,7 +343,7 @@ li a {
 .merch,
 .a-container {
   flex-flow: column;
-	justify-content: er;
+	justify-content: center;
 }
 /*Individual Customs*/
 
@@ -368,19 +371,3 @@ footer nav ul {
 		justify-content: space-between;
 	}
 }
-	
-
-/*Testing*/
-
-
-
-
-
-
-/*Boot strap CSS Tryout*/
-
-
-
-
-
-

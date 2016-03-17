@@ -4,7 +4,7 @@
       {{#link-to 'hub'}}
         <img id="logo" src="../images/undertale_logo.png">
       {{/link-to}}
-      <nav class="navbar navbar-default mymenu" role="navigation">
+      <nav class="navbar navbar-inverse mymenu" role="navigation">
         <ul class="nav navbar-nav row">
           <li ><!--  ABOUT -->
             <a href="#" {{action 'navHide'}}>ABOUT</a>
@@ -23,6 +23,7 @@
           <li><!--  FAQ -->
             {{#link-to 'faq'}}FAQ!{{/link-to}}
           </li>
+          
           <li><!--  Fan Page  -->
             {{#link-to 'mailbox'}}Beta-Fan Messages!{{/link-to}}
           </li>
@@ -35,7 +36,7 @@
         </ul>
       </nav>
     </header><!--Top of Site-->
-    <div class="page">
+    <div class="">
       {{outlet}}
     </div>
   {{else}}

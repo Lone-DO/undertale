@@ -30,10 +30,11 @@ body:after{
 
 body {
 	font-family: dtm-sans;
-	margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 	background: black;
 	text-align: center;
-	color: white;
+	color: rgba(255, 255, 255, 0.79);
 }
 
 ul  {
@@ -49,7 +50,7 @@ a:link,
 a:hover,
 a:active,
 a:visited {
-  color: yellow;
+  text-decoration: none;
 }
 
 /***************************
@@ -69,14 +70,6 @@ a:visited {
 .hide {
 	 display: none;
 }
-
-/***************************
-	 		Links & Pseudos
-****************************/
-
-/*
-
-*/
 
 /***************************
 	 		Header
@@ -164,18 +157,16 @@ a:visited {
 /***************************
 	 		 About
 ****************************/
-
-.a-container {
-	font-size: 1.9rem;
-	word-spacing: -2px;
-	margin-bottom: -100px
+ul.about{
+  padding-left: 0;
+  font-size: 2.7rem;
+	word-spacing: -1.5px;
+	margin-bottom: -100px;
 }
 
-about li img {
-	align-content: center;
-	width: 740px;
-	padding-left: 0px;
-	font-size: 2px;
+li img {
+  margin-bottom: 1.7rem;
+  margin-top: 1.7rem;
 }
 
 #xscr2 p {
@@ -190,16 +181,11 @@ about li img {
 	font-size: 1rem;
 }
 
-#xscr5,
-#xscr8 {
-	margin-bottom: .7em;
-}
-
 #xscr12 p {
 	margin-bottom: 9.6rem;
 }
 
-#a-lol {
+ul.about h2 {
 	letter-spacing: -2px;
 }
 

@@ -1,0 +1,68 @@
+/***************************
+	 		Base Styles
+****************************/
+@font-face {
+	font-family:'DTM-Sans';
+		src:url("../fonts/dtm-sans.otf");
+	}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: dtm-sans;
+  margin-right: auto;
+  margin-left: auto;
+	background: black;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.79);
+}
+
+ul  {
+	list-style: none;
+}
+
+iframe {
+	 border-style: none;
+	 border: 0;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+/***************************
+	 		Header
+****************************/
+
+#logo,
+.mymenu {
+	width:  100%;
+}
+
+.mymenu  {
+  font-size: 1.8rem;
+	text-shadow: 0 1px 0 #ccc,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+
+#nav_merch,
+#nav_merch a:visited,
+#nav_merch a:link {
+  color: #fdb2bf;
+}
+
+#nav_merch a span {
+  font-size: .8em;
+}

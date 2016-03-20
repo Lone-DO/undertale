@@ -21,6 +21,7 @@ body {
 
 ul  {
 	list-style: none;
+	padding: 0;
 }
 
 iframe {
@@ -33,6 +34,10 @@ a:hover,
 a:active,
 a:visited {
   text-decoration: none;
+}
+
+img[src*="fix"] {
+	width: 100%;
 }
 
 /***************************
@@ -66,3 +71,4 @@ a:visited {
 #nav_merch a span {
   font-size: .8em;
 }
+

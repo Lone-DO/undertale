@@ -15,10 +15,12 @@
 {{else}}<!--  Otherwise, Display Content-->
   <!--  Ex. @John Smith: Says "_"  -->
   <h3>@{{user}}: Says " {{text}} "</h3>
-  <button class="btn btn-primary" {{action 'edit'}}>
-      Edit Note</button>
-  <button class="btn btn-primary" {{action 'delete'}}>
-      delete</button>
+	<div class="controls ">
+		<button class="btn btn-primary" {{action 'edit'}}>
+				Edit Note</button>
+		<button class="btn btn-primary" {{action 'delete'}}>
+				delete</button>
+	</div>
 {{/if}}
 
 {{#if repliesAreShowing}} 

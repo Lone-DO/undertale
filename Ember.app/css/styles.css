@@ -98,7 +98,7 @@ a:visited {
 
 img[src*="fix"] {
 	width: 100%;
-	min-width: 300px;
+	min-height: 6em;
 }
 
 div#c-piece-email p {

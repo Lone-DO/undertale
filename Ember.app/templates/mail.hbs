@@ -23,16 +23,21 @@
 	</div>
 {{/if}}
 
-{{#if repliesAreShowing}} 
+{{#if repliesAreShowing}}
+  <button class="btn btn-info" {{action 'hideReplies'}}>
+    Hide Comments!</button>
+
   <div class="replyBox">
     {{#each replies}}
       <p>{{text}}</p>
     {{/each}}
+    
   </div>
+
   <p>
-    {{#link-to 'new-reply' this.id class="btn btn-default"}}
-      Reply{{/link-to}}
+    {{#link-to 'new-reply' this.id class="btn btn-default"}}Reply{{/link-to}}
   </p>
+  {{outlet}}
 {{else}}
   <button class="btn btn-info" {{action 'showReplies'}}>Show Replies</button>
 {{/if}}

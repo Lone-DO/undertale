@@ -78,7 +78,11 @@ a:visited {
 	 		 	 HUB
 ****************************/
 
-
+img[src*="available"] {
+  width: 100%;
+  max-width: 574px;
+  max-height: 205px;
+}
 
 /***************************
 	 		 	About

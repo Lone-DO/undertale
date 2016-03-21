@@ -1,4 +1,5 @@
 Undertale.Router.map(function () {
+  'use strict';
   this.resource('hub', {path: '/'}, function () {
   });
   this.resource('troubleshoot');

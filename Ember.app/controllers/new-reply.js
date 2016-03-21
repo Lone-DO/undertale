@@ -5,10 +5,10 @@ Undertale.NewReplyController = Ember.Controller.extend({
       'use strict';
       var reply = this.store.createRecord('reply', {
         text: this.get('text')
-      });
-      reply.save();
+      }),
+        mail = this.get('controllers.mail.model');
       
-      var mail = this.get('controllers.mail.model');
+      reply.save();
       mail.get('replies').pushObject(reply);
       mail.save();
       

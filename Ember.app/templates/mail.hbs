@@ -9,23 +9,25 @@
       {{textarea id="text" class="form-control" rows='5' value=text}}
     </div>
     <!--  Save To Mailbox -->
-    <button class="btn btn-primary" {{action 'save'}}>
+    <button class="btn btn-primary ctrl" {{action 'save'}}>
         Save mail :D</button>
   </form>
 {{else}}<!--  Otherwise, Display Content-->
   <!--  Ex. @John Smith: Says "_"  -->
   <h3>@{{user}}: Says " {{text}} "</h3>
-	<div class="controls ">
-		<button class="btn btn-primary" {{action 'edit'}}>
+	<div class="controls">
+		<button class="btn btn-primary ctrl" {{action 'edit'}}>
 				Edit Note</button>
-		<button class="btn btn-primary" {{action 'delete'}}>
+		<button class="btn btn-primary ctrl" {{action 'delete'}}>
 				delete</button>
 	</div>
 {{/if}}
 
 {{#if repliesAreShowing}}
-  <button class="btn btn-info" {{action 'hideReplies'}}>
+<div class="controls">
+  <button class="btn btn-info ctrl" {{action 'hideReplies'}}>
     Hide Comments!</button>
+
 
   <div class="replyBox">
     {{#each replies}}
@@ -33,11 +35,11 @@
     {{/each}}
     
   </div>
-
   <p>
-    {{#link-to 'new-reply' this.id class="btn btn-default"}}Reply{{/link-to}}
+    {{#link-to 'new-reply' this.id class="btn btn-default ctrl"}}Reply{{/link-to}}
   </p>
   {{outlet}}
 {{else}}
-  <button class="btn btn-info" {{action 'showReplies'}}>Show Replies</button>
+  <button class="btn btn-info ctrl" {{action 'showReplies'}}>Show Replies</button>
+  </div>
 {{/if}}

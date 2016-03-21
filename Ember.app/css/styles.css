@@ -199,11 +199,40 @@ div#c-piece-email p {
 	 		 Fan Mail
 ****************************/
 
+a:link[href*="mailbox/mails"],
+a:visited[href*="mailbox/mails"] {
+	color: white;
+	text-underline-position: none;
+	border-bottom: dotted 1.5px;
+}
+
+ul > li, 
+#mails {
+	margin-bottom: 10px;
+}
+
+div > h5 {
+  font-size: 3em;
+}
+
+div > h5:after {
+  content: url(../images/mail.snip.png);
+}
+
 .controls {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin-bottom: 6rem;
+}
+
+.ctrl { /* Color of the buttons*/
+  width: 25rem;
+  background: #262626;
+}
+
+button.btn.btn-info.ctrl { /* Reply button */
+  margin-bottom: 23px;
 }
 
 /***************************
@@ -225,6 +254,9 @@ div#c-piece-email p {
 	 			Footer
 ****************************/
 
+footer {
+  margin-top: 2em;
+}
 
 /***************************
 	 			Flexbox

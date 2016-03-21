@@ -88,10 +88,10 @@ img[src*="available"] {
 	 		 	About
 ****************************/
 #about {
-	font-size: 1.6rem
+	font-size: 2rem;
 /*	font-size: 2.7rem*/
-		letter-spacing: 3px;
-		word-spacing: 1px;
+  letter-spacing: 3px;
+  word-spacing: 1px;
 }
 
 img[src*="xscreen"],

@@ -239,6 +239,31 @@ button.btn.btn-info.ctrl { /* Reply button */
 	 		 Gallery
 ****************************/
 
+#gPage {
+  background-image: url(../images/backSound.gif);
+}
+
+#flickr,
+#tumblr {
+  display: flex;
+  flex-direction: column;
+  opacity: .7;
+}
+
+#flickr img,
+#tumblr img {
+  width: 96%;
+  max-height: 96%;
+  /*  img Glow*/
+  -webkit-box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
+  -moz-box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
+  box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
+  /* Border Decor*/
+  border-radius: 60px 60px 60px 60px;
+  -moz-border-radius: 60px 60px 60px 60px;
+  -webkit-border-radius: 60px 60px 60px 60px;
+  border: 10px ridge #595959;
+}
 
 /***************************
 	 		 MusicBox

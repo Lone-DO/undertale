@@ -19,7 +19,5 @@ Undertale.Router.map(function () {
   //Gallery for Fan made Art Collections
   this.resource('gallery');
   //Musicbox for variety of Undertale Hit tunes
-  this.resource('musicbox', function () {
-    this.resource('library');
-  });
+  this.resource('musicbox');
 });

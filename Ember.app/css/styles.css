@@ -90,6 +90,11 @@ img[src*="available"] {
   max-height: 205px;
 }
 
+iframe[src*='youtube'] {
+  width: 80%;
+  height: 300px;
+}
+
 /***************************
 	 		 	About
 ****************************/
@@ -101,7 +106,7 @@ img[src*="available"] {
 }
 
 img[src*="xscreen"],
-img[src*="logo"]{
+img[src*="logo"] {
 	width: 100%;
 	min-height: 6em;
 	margin-bottom: 1.7rem;
@@ -145,9 +150,11 @@ img[src*="demo"] {
 img[src*="demo_a"] {
 	width: 100%;
 }
+
 .yes p {
 	letter-spacing: 1px;
 	margin-bottom: 3em;
+  font-size: 2rem;
 }
 .yes p span {
 	color: grey;
@@ -161,10 +168,18 @@ img[src*="demo_a"] {
 
 .contact {
 	font-size: 2.4rem;
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
 }
 
 img[src*="fix"] {
-	width: 100%;
+	width: 70%;
 	min-height: 6em;
 }
 
@@ -179,16 +194,27 @@ div#c-piece-email p {
 	width: 80%;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: left;
+	text-align: center;
 }
 
 #backToFront p {
 	color: yellow;
 }
 
+#c-piece-unrelated a{
+  color: #03abfe;
+}
+
+
+
 /***************************
 	 	     FAQ
 ****************************/
+
+#faq {
+  display: flex;
+  flex-flow: column;
+}
 
 #faq ul{
 	text-align: left;
@@ -282,11 +308,18 @@ button.btn.btn-info.ctrl { /* Reply button */
 
 #musicbox {
   font-family: '8bitoperator Regular';
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
-.tunePod {
-  width: 100%;
-  vertical-align: 
+#musicbox iframe {
+  max-width: 100%;
 }
 
 /***************************
@@ -333,38 +366,91 @@ footer {
   
 } /*End Query*/
 
+/***************************
+	 		Width 768px
+****************************/
+
 @media (min-width: 768px){
   body {
-    background: yellow;
+/*    background: yellow;*/
   }
   
   .container {
     width: 95%;
   }
   
-  /* Header-768 */
-  .mymenu, .nav {
+  .mymenu, 
+  .nav,
+  #musicbox {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
     -webkit-align-items: center;
     align-items: center;
+  }
+  
+  .mymenu, 
+  .nav {
     -webkit-justify-content: center;
     justify-content: center;
   }
   
-}
-
-@media (min-width: 960px) {
-  .mymenu li {
-/*    align-items: stretch;*/
-    font-size: 2.2rem;
+  #musicbox {
+    -webkit-justify-content: space-around;
+    justify-content: space-around;
+  }
+  
+  #musicbox iframe[src*='podsnack'] {
+    -webkit-flex: 2 0 0; 
+    flex: 3 0 0;
+    padding: 0 10px;
+  }
+  
+  #musicbox iframe[src*='spotify'] {
+    -webkit-flex: 1 0 0;
+    flex: 1 0 0;
   }
 }
 
-@media (min-width: 1024px){
-  body {
-    background: blue;
+/***************************
+	 		Width 960px
+****************************/
+
+@media (min-width: 960px) {
+  .mymenu li {
+    font-size: 2.3rem;
+  }
+}
+
+/***************************
+	 		Width 1024px
+****************************/
+
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  
+  /*About adjust*/
+  #about p {
+    font-size: 3.5rem;
+  }
+  #about li span {
+    font-size: 2rem;
+  }
+  
+  /*Faq item adjust*/
+  #faq h1 {
+    font-size: 4.5rem;
+  }
+ 
+  #faq ul {
+    font-size: 2.4rem;
+  }
+  
+  /*Contact apge div adjust*/
+  #c-piece-1 {
+    width: 70%;
   }
 }

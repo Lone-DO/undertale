@@ -63,6 +63,11 @@ a:visited {
                0 20px 20px rgba(0,0,0,.15);
 }
 
+.mymenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 #nav_merch,
 #nav_merch a:visited,
@@ -216,7 +221,7 @@ div > h5 {
 }
 
 div > h5:after {
-  content: url(../images/mail.snip.png);
+  content: url(../images/mail.ico.png);
 }
 
 .controls {
@@ -245,9 +250,9 @@ button.btn.btn-info.ctrl { /* Reply button */
 
 #flickr,
 #tumblr {
+  opacity: .7;
   display: flex;
   flex-direction: column;
-  opacity: .7;
 }
 
 #flickr img,

@@ -11,13 +11,13 @@ $(document).ready(function () {
         format: "json"
       };
     function displayPhotos(data) {
-      var photoHTML = '<ul class="hoverbox">';
+      var photoHTML = '<ul>';
       $.each(data.items, function (i, photo) {
-        photoHTML += '<li>' + '<a href="' + photo.link + '" class="image">';
+        photoHTML += '<li>' + '<a href="' + photo.link + '">';
         photoHTML += '<img src="' + photo.media.m + '"></a></li>';
       }); // end each
       photoHTML += '</ul>';
-      $('#flickr').html(photoHTML);
+      $('#flickr').append(photoHTML);
     }
     $.getJSON(flickerAPI, opts, displayPhotos);
 
@@ -78,7 +78,7 @@ $(document).ready(function () {
             sum = photos[i].summary,
             photo = '<ul>';
           
-          photo += '<li>' + '<a href="' + url + '" class="image">';
+          photo += '<li>' + '<a href="' + url + '">';
           photo += '<img src="' + url + '"></a></li>';
           photo += '</ul>';
           console.log(photo, sum);

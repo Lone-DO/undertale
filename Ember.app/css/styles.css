@@ -65,8 +65,8 @@ a:visited {
 
 .mymenu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 #nav_merch,
@@ -251,14 +251,19 @@ button.btn.btn-info.ctrl { /* Reply button */
 #flickr,
 #tumblr {
   opacity: .7;
+  display: -webkit-flex;
   display: flex;
+  -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
 
 #flickr img,
 #tumblr img {
   width: 96%;
-  max-height: 96%;
   /*  img Glow*/
   -webkit-box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
   -moz-box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
@@ -296,3 +301,31 @@ footer {
 /***************************
 	 		Media Queries
 ****************************/
+
+@media (min-width: 640px){
+  body {
+/*    background: red;*/
+  }
+  
+  /* Tuned Gallery */
+  #tumblr,
+  #flickr {
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    -webkit-align-content: flex-end;
+    align-content: flex-end;
+  }
+
+  #tumblr img,
+  #flickr img {
+    max-width: 300px; 
+  }
+  
+} /*End Query*/
+
+@media (min-width: 1024px){
+  body {
+    background: blue;
+  }
+}

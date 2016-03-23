@@ -6,7 +6,6 @@
 		src:url("../fonts/dtm-sans.otf");
 	}
 
-/* @font-face kit by Fonts2u (http://www.fonts2u.com) */ 
 @font-face {
   font-family: "8bitoperator Regular";
   src:url("../fonts/fonts8bitoperator.eot?") format("eot"),
@@ -83,6 +82,20 @@ a:visited {
 /***************************
 	 		 	 HUB
 ****************************/
+#hub div {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: space-between;
+   justify-content: space-between;
+}
+
+#hub iframe {
+  margin-top: 20px;
+}
 
 img[src*="available"] {
   width: 100%;
@@ -95,12 +108,16 @@ iframe[src*='youtube'] {
   height: 300px;
 }
 
+#purchase iframe {
+  min-height: 200px;
+  min-width: 320px;
+}
+
 /***************************
 	 		 	About
 ****************************/
 #about {
 	font-size: 2rem;
-/*	font-size: 2.7rem*/
   letter-spacing: 3px;
   word-spacing: 1px;
 }
@@ -128,8 +145,7 @@ img[src*="logo"] {
 	margin-top: 27em;
 }
 
-#laugh{
-	
+#laugh {
 	font-size: 2rem;
 	letter-spacing: -.6px;
 }
@@ -138,6 +154,7 @@ img[src*="logo"] {
 /***************************
 	 		 	DEMO
 ****************************/
+
 .yes {
 	width: 80%;
 	margin: auto;
@@ -156,6 +173,7 @@ img[src*="demo_a"] {
 	margin-bottom: 3em;
   font-size: 2rem;
 }
+
 .yes p span {
 	color: grey;
 	text-align: left;
@@ -201,11 +219,9 @@ div#c-piece-email p {
 	color: yellow;
 }
 
-#c-piece-unrelated a{
+#c-piece-unrelated a {
   color: #03abfe;
 }
-
-
 
 /***************************
 	 	     FAQ
@@ -345,10 +361,7 @@ footer {
 ****************************/
 
 @media (min-width: 640px){
-  body {
-/*    background: red;*/
-  }
-  
+
   /* Tuned Gallery */
   #tumblr,
   #flickr {
@@ -364,15 +377,22 @@ footer {
     max-width: 40rem; 
   }
   
-} /*End Query*/
+  #purchase iframe {
+    width: 400px;
+    
+  }
+  
+}
 
 /***************************
 	 		Width 768px
 ****************************/
 
 @media (min-width: 768px){
-  body {
-/*    background: yellow;*/
+  
+  #purchase iframe {
+    width: 500px;
+    height: 320px;
   }
   
   .container {
@@ -431,6 +451,16 @@ footer {
   .container {
     width: 100%;
   }
+  
+  #purchase iframe {
+    width: 700px;
+    height: 320px;
+  }
+  
+  iframe[src*='youtube'] {
+  max-width: 600px;
+  height: 300px;
+}
   
   /*About adjust*/
   #about p {

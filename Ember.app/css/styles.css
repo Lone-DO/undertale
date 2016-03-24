@@ -306,7 +306,9 @@ button.btn.btn-info.ctrl { /* Reply button */
 }
 
 #flickr,
-#tumblr {
+#tumblr,
+#artist1,
+#artist2 {
   opacity: .7;
   display: -webkit-flex;
   display: flex;
@@ -319,7 +321,9 @@ button.btn.btn-info.ctrl { /* Reply button */
 }
 
 #flickr img,
-#tumblr img {
+#tumblr img,
+#artist1 img,
+#artist2 img {
   width: 96%;
   /*  img Glow*/
   -webkit-box-shadow: -4px 0px 233px -2px rgba(255,255,255,0.31);
@@ -378,7 +382,9 @@ footer {
 
   /* Tuned Gallery */
   #tumblr,
-  #flickr {
+  #flickr,
+  #artist1,
+  #artist2 {
     -webkit-flex-flow: row wrap;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -387,7 +393,9 @@ footer {
   }
 
   #tumblr img,
-  #flickr img {
+  #flickr img,
+  #artist1 img,
+  #artist2 img {
     max-width: 40rem; 
   }
   
@@ -495,7 +503,7 @@ footer {
     font-size: 2.4rem;
   }
   
-  /*Contact apge div adjust*/
+  /*Contact page div adjust*/
   #c-piece-1 {
     width: 70%;
   }

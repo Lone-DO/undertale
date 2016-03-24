@@ -89,6 +89,80 @@ $(document).ready(function () {
       }
     });//end Photo's Pull
   });//end tumblr
+  
+  //Charadreernurr Tumblr
+  $('#showArtist1').click(function () {
+    // Authenticate via API Key
+    var tumblrAPI = "http://api.tumblr.com/v2/blog/undertale.gq/info?api_key=vloc4eXTLszkJIWjma1zAvx9wcYnXTaGS1QdKiTGHR3epAclxP",
+      tumblrPhoto =
+        "http://api.tumblr.com/v2/blog/undertale.gq/posts/photo?api_key=vloc4eXTLszkJIWjma1zAvx9wcYnXTaGS1QdKiTGHR3epAclxP",
+      text = '';
+    //T-Header
+    $.ajax({
+      url: tumblrAPI,
+      dataType: 'jsonp',
+      success: function (results) {
+        $("h1").html(results.response.blog.title);
+      }
+    });//end Title Pull
+    //T-Photos
+    $.ajax({
+      url: tumblrPhoto,
+      dataType: 'jsonp',
+      success: function (data) {
+        var photos = data.response.posts;
+        $.each(photos, function (i) {
+          var url = photos[i].photos[0].original_size.url,
+            sum = photos[i].summary,
+            photo = '<ul>';
+          photo += '<li>' + '<a href="' + url + '">';
+          photo += '<img src="' + url + '"></a></li>';
+          photo += '</ul>';
+          console.log(photo, sum);
+          $('#artist1').append(photo);
+        });
+        console.log('Photo Loop done');
+        console.log(photos);
+      }
+    });//end Photo's Pull
+  });//end Artist 1
+  
+  //Asgore Mememurr Tumblr
+  $('#showArtist2').click(function () {
+    // Authenticate via API Key
+    var tumblrAPI = "http://api.tumblr.com/v2/blog/undertale.ga/info?api_key=vloc4eXTLszkJIWjma1zAvx9wcYnXTaGS1QdKiTGHR3epAclxP",
+      tumblrPhoto =
+        "http://api.tumblr.com/v2/blog/undertale.ga/posts/photo?api_key=vloc4eXTLszkJIWjma1zAvx9wcYnXTaGS1QdKiTGHR3epAclxP",
+      text = '';
+    //T-Header
+    $.ajax({
+      url: tumblrAPI,
+      dataType: 'jsonp',
+      success: function (results) {
+        $("h1").html(results.response.blog.title);
+      }
+    });//end Title Pull
+    //T-Photos
+    $.ajax({
+      url: tumblrPhoto,
+      dataType: 'jsonp',
+      success: function (data) {
+        var photos = data.response.posts;
+        $.each(photos, function (i) {
+          var url = photos[i].photos[0].original_size.url,
+            sum = photos[i].summary,
+            photo = '<ul>';
+          photo += '<li>' + '<a href="' + url + '">';
+          photo += '<img src="' + url + '"></a></li>';
+          photo += '</ul>';
+          console.log(photo, sum);
+          $('#artist2').append(photo);
+        });
+        console.log('Photo Loop done');
+        console.log(photos);
+      }
+    });//end Photo's Pull
+  });//end Artist 2
 }); // end ready
 
 //API Reference: MEOW!

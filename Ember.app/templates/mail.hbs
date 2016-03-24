@@ -1,16 +1,21 @@
 {{#if isEditing}} <!--  If in Editor Mode -->
-  <form>
+  <form {{action 'save' on='submit'}}>
     <div class="form-group"><!--  Input UserName  -->
-      <label for="user">{{user}}</label>
-      {{input id="user" class="form-control" value=user}}
+      <label for="user">Nickname: {{user}}</label>
+      {{input id="user" class="form-control" value=user 
+          placeholder="Sir Pin Head" minlength='3' maxlength="25" required="required"}}
+      <span>Keep Name at least 3 characters long</span>
     </div>
     <div class="form-group"><!--   Input Text  -->
-      <label for="text">{{text}}</label>
-      {{textarea id="text" class="form-control" rows='5' value=text}}
+      <label for="text">
+        Leave mail for the Devs and Designers to see:
+      </label>
+      {{textarea id="text" class="form-control" value=text rows='4'
+          placeholder="Oh Hi There, This is random text to let you know what you Shouldn't do ;D " minlength='5' maxlength="200" required="required"}}
+      <span>Keep Text at least 10 characters long</span>
     </div>
     <!--  Save To Mailbox -->
-    <button class="btn btn-primary ctrl" {{action 'save'}}>
-        Save mail :D</button>
+    {{input id="save" class="btn btn-primary ctrl" type="submit" value="Save mail :D"}}
   </form>
 {{else}}<!--  Otherwise, Display Content-->
   <!--  Ex. @John Smith: Says "_"  -->

@@ -1,20 +1,20 @@
 <h2>Speak Out!</h2>
 
-<form>
+<form {{action 'save' on='submit'}}>
   <div class="form-group">
     <label for="user">Enter Pin Name:</label>
-    {{input id="user target" class="form-control" value=user 
-        placeholder="Sir Pin Head" min="3" max='15'}}
+    {{input id="user" class="form-control" value=user 
+        placeholder="Sir Pin Head" minlength='3' maxlength="25" required="required"}}
     <span>Enter a Name at least 3 characters long</span>
   </div>
   <div class="form-group">
     <label for="text">
       Leave mail for the Devs and Designers to see:
     </label>
-    {{textarea id="text" class="form-control" value=text 
-        placeholder="Oh Hi There, This is random text to let you know what you Shouldn't do ;D " min="5"}}
+    {{textarea id="text" class="form-control" value=text rows='4'
+        placeholder="Oh Hi There, This is random text to let you know what you Shouldn't do ;D " minlength='5' maxlength="200" required="required"}}
     <span>Text must be at least 10 characters long</span>
   </div>
   
-    <input {{action 'save'}} id="save" class="btn btn-primary ctrl" type="submit" value="Save mail :D">
+    {{input id="save" class="btn btn-primary ctrl" type="submit" value="Save mail :D"}}
 </form>
